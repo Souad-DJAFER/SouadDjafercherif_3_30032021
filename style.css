@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+body * {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
