@@ -115,6 +115,50 @@ h3 {
 .section3 {
   background-color: #f6f6f6;
 }
+.section3 .section3__block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.section3 .section3__block .section3__article {
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 1px 1px 12px #c5c5c5;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.section3 .section3__block .section3__article .section3__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+  object-position: bottom;
+}
+.section3 .section3__block .section3__article .section3__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.section3 .section3__block .section3__article .section3__box .section3__divtext {
+  display: flex;
+  flex-direction: column;
+  width: 87%;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+.section3 .section3__block .section3__article .section3__box .section3__divtext .section3__h4 {
+  margin: 0;
+  padding-top: 10px;
+}
+.section3 .section3__block .section3__article .section3__box .section3__divtext .section3__p {
+  margin: 5px 0 20px 0;
+}
+.section3 .section3__block .section3__article .section3__box .section3__icone {
+  font-size: 1.4em;
+}
+
 img {
   width: 100%;
   height: auto;
