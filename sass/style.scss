@@ -74,6 +74,7 @@ header{
 h2{
     padding-top: 30px;
     padding-bottom: 15px;
+    margin-left: 20px;
 }
 
 .section2{
@@ -90,7 +91,8 @@ h2{
         background-color: $bg-lightgrey;
         border: 2px solid $bg-lightgrey;
         border-radius: 1em;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 12px rgb(197, 197, 197);
         .section2__number{
             color: white;
             font-size: 20px;
@@ -114,9 +116,50 @@ h2{
     background-color: $click-article;
 }
 
+h3{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.section3{
+    background-color: $bg-lightgrey;
+
+    .section3__article{
+
+    }
+}
+
+
+
 
 img{
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+footer{
+    background-color: $footer;
+    color: white;
+    padding : 20px;
+    .footer__logo{
+        font-family: Shrikhand;
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+    .footer__ul{
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 1.1em;
+    }
+    .footer__li{
+        margin-bottom: 10px;
+        .footer__i{
+            width: 16px;
+            margin-right: 8px;
+        }
+    }
 }
