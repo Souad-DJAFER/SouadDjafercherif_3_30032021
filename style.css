@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: roboto, sans-serif;
 }
 body * {
@@ -13,6 +14,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   /* box shadow effacée en mettant background color formulaire */
   box-shadow: 8px 0 8px grey;
 }
@@ -28,6 +30,7 @@ header .header__img {
   align-items: center;
   height: 65px;
   background-color: #eaeaea;
+  width: 100%;
 }
 .form .form__recherche {
   background-color: #eaeaea;
@@ -57,6 +60,53 @@ header .header__img {
   height: 40px;
   border-radius: 1.5em;
   margin-bottom: 40px;
+}
+
+h2 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section2 .section2__article {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 350px;
+  background-color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  border-radius: 1em;
+  margin-bottom: 10px;
+}
+.section2 .section2__article .section2__number {
+  color: white;
+  font-size: 20px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-left: -15px;
+}
+.section2 .section2__article .section2__i {
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+}
+
+/* Ne marche pas */
+.section2__article-click {
+  color: red;
+  background-color: #f5edff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

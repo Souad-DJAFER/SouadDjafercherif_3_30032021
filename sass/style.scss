@@ -4,10 +4,12 @@ $tertiary: #99E2D0;
 $bg-darkgrey: #eaeaea;
 $bg-lightgrey: #f6f6f6;
 $footer: #353535;
+$click-article: #f5edff;
 
 body{
     margin:0;
     padding:0;
+    width: 100%;
     font-family: roboto, sans-serif; 
     * {
         box-sizing:border-box;
@@ -19,6 +21,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     /* box shadow effacée en mettant background color formulaire */
     box-shadow: 8px 0 8px grey;
     .header__img{  
@@ -35,6 +38,7 @@ header{
     align-items: center;
     height: 65px;
     background-color: $bg-darkgrey;
+    width: 100%;
     .form__recherche{
         background-color: $bg-darkgrey;
         border: none;
@@ -65,4 +69,54 @@ header{
         border-radius: 1.5em;
         margin-bottom: 40px;
     }
+}
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.section2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+    .section2__article{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        width : 350px;
+        background-color: $bg-lightgrey;
+        border: 2px solid $bg-lightgrey;
+        border-radius: 1em;
+        margin-bottom: 10px;
+        .section2__number{
+            color: white;
+            font-size: 20px;
+            background-color: $primary;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin-left : -15px;
+        }
+        .section2__i{
+            font-size: 20px;
+            margin: 0 20px 0 20px;
+        }
+    }
+}
+
+/* Ne marche pas */
+.section2__article-click{
+    color: red;
+    background-color: $click-article;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
