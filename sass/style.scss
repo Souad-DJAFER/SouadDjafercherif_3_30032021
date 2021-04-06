@@ -22,8 +22,6 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* box shadow effacée en mettant background color formulaire */
-    box-shadow: 8px 0 8px grey;
     .header__img{  
         width: 200px;
         padding: 20px 0 10px 0;
@@ -39,6 +37,7 @@ header{
     height: 65px;
     background-color: $bg-darkgrey;
     width: 100%;
+    box-shadow: inset 5px 10px 10px -10px grey;
     .form__recherche{
         background-color: $bg-darkgrey;
         border: none;
