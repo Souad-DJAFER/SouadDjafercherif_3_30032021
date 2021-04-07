@@ -57,6 +57,7 @@ header .header__img {
   width: 200px;
   height: 40px;
   border-radius: 1.5em;
+  border: 0px;
   margin-bottom: 40px;
 }
 
@@ -77,7 +78,6 @@ h2 {
   align-items: baseline;
   width: 350px;
   background-color: #f6f6f6;
-  border: 2px solid #f6f6f6;
   border-radius: 1em;
   margin-bottom: 30px;
   box-shadow: 1px 1px 12px #c5c5c5;
@@ -89,18 +89,21 @@ h2 {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  text-align: center;
   margin-left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section2 .section2__article .section2__i {
   font-size: 20px;
   margin: 0 20px 0 20px;
+  color: gray;
 }
-
-/* Ne marche pas */
-.section2__article-click {
-  color: red;
+.section2 .section2__article:hover {
   background-color: #f5edff;
+}
+.section2 .section2__article:hover .section2__i {
+  color: #9356DC;
 }
 
 h3 {
@@ -126,6 +129,21 @@ h3 {
   box-shadow: 1px 1px 12px #c5c5c5;
   width: 90%;
   margin-bottom: 20px;
+  position: relative;
+}
+.section3 .section3__block .section3__article .greensign {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #99E2D0;
+  margin: 0;
+  padding: 7px 12px 5px 12px;
+  border-radius: 2px;
+}
+.section3 .section3__block .section3__article .greensign .greensign__p {
+  color: #249c7f;
+  margin: 0;
+  font-weight: bold;
 }
 .section3 .section3__block .section3__article .section3__img {
   width: 100%;
@@ -133,6 +151,9 @@ h3 {
   object-fit: cover;
   border-radius: 1em 1em 0 0;
   object-position: bottom;
+}
+.section3 .section3__block .section3__article .section3__img.imgfitcenter {
+  object-position: center;
 }
 .section3 .section3__block .section3__article .section3__box {
   display: flex;
