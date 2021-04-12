@@ -1,0 +1,112 @@
+/*CSS des pages Menu*/
+@import "variables";
+
+body{
+    margin:0;
+    padding:0;
+    width: 100%; 
+    font-family: roboto, Shrikhand, sans-serif; 
+    * {
+        box-sizing:border-box;
+    }
+}
+
+header{
+    height:70px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: Shrikhand;
+    
+    .header__icone{
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+    }
+    .header__p{
+        font-size: 25px;
+    }
+}
+
+.banner{
+    object-fit: cover;
+}
+
+.menu{
+    background-color: $bg-darkgrey;
+    font-family: Roboto;
+    border-radius: 2em 2em 0 0;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    .heading{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 0;
+        padding-top: 20px;
+        .heading__h1{
+            font-size: 1.5em;
+            font-family: Shrikhand;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .far.fa-heart{
+            font-size: 1.5em;
+            padding-left: 50px;
+        }
+    }
+    .menu__h2{
+        width: 80px;
+        font-size: 1.2em;
+        font-weight: lighter;
+        border-bottom: 4px solid $tertiary;
+        padding-right: 0px;
+    }
+
+    .menu__article{
+        background-color: white;
+        border-radius: 1em;
+        width: 95%;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 10px 5px 10px;
+        .mealname{
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 5px; 
+            margin-bottom: 5px;
+        }
+        .articlelign2{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+    }
+}
+
+footer{
+    background-color: $footer;
+    color: white;
+    padding : 20px;
+    .footer__logo{
+        font-family: Shrikhand;
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+    .footer__ul{
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 1.1em;
+    }
+    .footer__li{
+        margin-bottom: 10px;
+        .footer__i{
+            width: 16px;
+            margin-right: 8px;
+        }
+    }
+}

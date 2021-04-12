@@ -3,7 +3,7 @@
     <head>
 			<meta charset="utf-8"/> 
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="style.scss"/>
+            <link rel="stylesheet" href="style.css"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
 			<script src="https://kit.fontawesome.com/26c6410359.js" crossorigin="anonymous"></script>
@@ -12,38 +12,41 @@
 
     <body>
         <header>
-            <img src="images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food !"/>
+            <a href="index.html"><i class="fas fa-arrow-left header__icone"></i></a>
+            <p class="header__p">Ohmyfood</p>
         </header>
 
         <!--SECTION PHOTO-->
 
         <section>
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo Assiette Restaurant La Palette du Goût"/>
+            <img class="banner" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo Assiette Restaurant La Palette du Goût"/>
         </section>
 
         <!--SECTION MENU-->
 
-        <section>
-            <div>
-                <h1>La palette du goût</h1>
-                <i class="far fa-heart"></i>
+        <section class="menu">
+            <div class="heading">
+                <h1 class="heading__h1">La palette du goût</h1>
+                <i class="far fa-heart heading__i"></i>
             </div>
 
             <div class="entrees">
-                <h2>ENTR&Eacute;ES</h2>
-                <article>
-                    <p>Fricassée d'escargot</p>
-                    <p>Au piment d'espelette</p>
-                    <p>25€</p>
+                <h2 class="menu__h2">ENTR&Eacute;ES</h2>
+                <article class="menu__article">
+                    <p class="mealname">Fricassée d'escargot</p>
+                    <div class="articlelign2">
+                        <p>Au piment d'espelette</p>
+                        <p>25€</p>
+                    </div>
                 </article>
 
-                <article>
+                <article class="menu__article">
                     <p>Foie gras de canard mi-cuit</p>
                     <p>Et ses copeaux de truffe noire</p>
                     <p>35€</p>
                 </article>
 
-                <article>
+                <article class="menu__article">
                     <p>Oeuf au plat</p>
                     <p>Assaisonné à la truffe sur lit de salade</p>
                     <p>20€</p>
@@ -51,20 +54,20 @@
             </div>
 
             <div class="plats">
-                <h2>PLATS</h2>
-                <article>
+                <h2 class="menu__h2">PLATS</h2>
+                <article class="menu__article">
                     <p>Filet de boeuf aux herbes</p>
                     <p>Accompagné de sa ribambelle de légumes</p>
                     <p>40€</p>
                 </article>
 
-                <article>
+                <article class="menu__article">
                     <p>Parmentier de queue de boeuf</p>
                     <p>&Agrave; la truffe noire sur sa purée de panais</p>
                     <p>35€</p>
                 </article>
 
-                <article>
+                <article class="menu__article">
                     <p>Filet de Turbot</p>
                     <p>Aux agrumes</p>
                     <p>44€</p>
@@ -72,20 +75,20 @@
             </div>
 
             <div class="desserts">
-                <h2>DESSERTS</h2>
-                <article>
+                <h2 class="menu__h2">DESSERTS</h2>
+                <article class="menu__article">
                     <p>Paris-Brest</p>
                     <p>Revisité</p>
                     <p>18€</p>
                 </article>
 
-                <article>
+                <article class="menu__article">
                     <p>Macaron au chocolat d'exception</p>
                     <p>Et glace à la vanille de Madagascar</p>
                     <p>22€</p>
                 </article>
 
-                <article>
+                <article class="menu__article">
                     <p>Mousse au chocolat</p>
                     <p>Au piment d'espelette et à la truffe noire</p>
                     <p>23€</p>
@@ -99,7 +102,7 @@
         <!--FOOTER-->
 
         <footer>
-            <img src="images/logo/ohmyfood.png" alt="Logo Oh My Food !"/>
+            <img class="footer__img" src="images/logo/ohmyfood.png" alt="Logo Oh My Food !"/>
             <ul>
                 <li>
                     <i class="fas fa-utensils"></i>
@@ -113,6 +116,5 @@
                 <li>Contact</li>
             </ul>
         </footer>
-
-        </body>
+    </body>
 </html>
