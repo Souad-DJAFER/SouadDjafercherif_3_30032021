@@ -54,13 +54,14 @@ header{
         font-size: 1.3em;
     }
     .section1__button{
-        background-color: $secondary;
+        background: linear-gradient(to bottom right, $secondary, $primary);
         color: white;
         width: 200px;
         height: 40px; 
         border-radius: 1.5em;
         border: 0px;
         margin-bottom: 40px;
+        box-shadow: 1px 1px 12px rgb(197, 197, 197);
     }
 }
 
@@ -181,8 +182,6 @@ h3{
         }
     }
 }
-
-
 
 
 img{
