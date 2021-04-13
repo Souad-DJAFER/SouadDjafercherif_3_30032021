@@ -193,10 +193,10 @@ header {
 .section1 .section1__h1 {
   font-size: 1.6em;
   margin-top: 0;
-  padding: 40px 60px 10px 60px;
+  padding: 40px 10px 10px 10px;
 }
 .section1 .section1__p {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .section1 .section1__button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -326,9 +326,6 @@ h3 {
 }
 .section3 .section3__block .section3__article .section3__box .section3__icone {
   font-size: 1.4em;
-}
-.section3 .section3__block .section3__article .section3__box .coloredheart:active {
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .section3 .section3__block a {
   text-decoration: none;
