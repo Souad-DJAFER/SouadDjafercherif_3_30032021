@@ -10,25 +10,28 @@ body * {
 }
 
 /*HEADER*/
-header {
+.menuheader {
   height: 70px;
   width: 100%;
   font-family: Shrikhand;
   background-color: #f6f6f6;
-}
-header .header__nav {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
-header .header__nav .header__icone {
-  font-size: 15px;
+.menuheader .menuheader__a {
   text-decoration: none;
   color: black;
+  width: 25%;
+  align-items: center;
+  font-size: 1em;
 }
-header .header__nav .header__p {
+.menuheader .menuheader__i {
+  font-size: 20px;
+  margin: 0 0 15px 15px;
+}
+.menuheader .menuheader__p {
   font-size: 25px;
+  width: 75%;
 }
 
 /*SECTION PHOTO*/
@@ -225,10 +228,10 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  width: 80%;
+  width: 85%;
   background-color: #f6f6f6;
   border-radius: 1em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   box-shadow: 1px 1px 12px #c5c5c5;
 }
 .section2 .section2__article .section2__number {

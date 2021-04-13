@@ -13,25 +13,28 @@ body{
 
 /*HEADER*/
 
-header{
+.menuheader{
     height: 70px;
     width: 100%;
     font-family: Shrikhand;
     background-color: $bg-lightgrey;
-    .header__nav{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .header__icone{
-            font-size: 15px;
+    display: flex;
+    flex-direction: row;
+        .menuheader__a{
             text-decoration: none;
             color: black;
+            width: 25%;
+            align-items: center;
+            font-size: 1em;
         }
-        .header__p{
+        .menuheader__i{
+            font-size: 20px;
+            margin: 0 0 15px 15px;
+            }
+        .menuheader__p{
             font-size: 25px;
+            width: 75%;
         }
-    }
 }
 
 /*SECTION PHOTO*/
