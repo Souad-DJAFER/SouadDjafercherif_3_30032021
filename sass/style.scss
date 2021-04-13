@@ -12,13 +12,13 @@ body{
 }
 
 header{
-    height:70px;
+    height:50px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-family: Shrikhand;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 /* FORMULAIRE DE RECHERCHE */
@@ -27,16 +27,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
+    height: 40px;
     background-color: $bg-darkgrey;
     width: 100%;
-    box-shadow: inset 5px 10px 10px -10px grey;
+    box-shadow: inset 5px 8px 8px -10px grey;
+    i{
+        font-size: 15px;
+    }
     .form__recherche{
-        background-color: $bg-darkgrey;
-        border: none;
-        padding-left: 20px;
+        padding-left: 14px;
         height: 25px;
-        font-size: 1.2em;
+        font-size: 15px;
+        margin: 0;
+        padding-top: 4px;
     }
 }
 
@@ -46,17 +49,20 @@ header{
     background-color: $bg-lightgrey;
     text-align: center;
     .section1__h1{
-        font-size: 1.6em;
+        font-size: 1.4em;
         margin-top: 0;
         padding: 40px 10px 10px 10px;
+        margin-bottom: 5px;
     }
     .section1__p{
         font-size: 1em;
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
     .section1__button{
         background: linear-gradient(to bottom right, $secondary, $primary);
         color: white;
-        width: 200px;
+        width: 180px;
         height: 40px; 
         border-radius: 1.5em;
         border: 0px;
@@ -115,14 +121,16 @@ h2{
 /* SECTION 3 - RESTAURANTS */
 
 h3{
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 15px;
     margin-left: 20px;
+    margin-bottom: 10px;
     font-size: 1.5em;
 }
 
 .section3{
     background-color: $bg-lightgrey;
+    margin-top: 30px;
     .section3__block{
         display: flex;
         flex-direction: column;
@@ -152,7 +160,7 @@ h3{
             }
             .section3__img{
                 width: 100%;
-                height: 200px;
+                height: 170px;
                 object-fit: cover;
                 border-radius: 1em 1em 0 0;
                 object-position: bottom;
