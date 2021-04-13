@@ -21,7 +21,7 @@ header{
     font-size: 2em;
 }
 
-/* FORM */
+/* FORMULAIRE DE RECHERCHE */
 
 .form{
     display: flex;
@@ -40,7 +40,7 @@ header{
     }
 }
 
-/* SECTION 1 */
+/* SECTION 1 - RESERVEZ ET EXPLOREZ */
 
 .section1{
     background-color: $bg-lightgrey;
@@ -65,6 +65,8 @@ header{
     }
 }
 
+/* SECTION 2 - FONCTIONNEMENT */
+
 h2{
     padding-top: 30px;
     padding-bottom: 15px;
@@ -79,7 +81,7 @@ h2{
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        width : 350px;
+        width : 80%;
         background-color: $bg-lightgrey;
         border-radius: 1em;
         margin-bottom: 30px;
@@ -109,6 +111,8 @@ h2{
         }
     }
 }
+
+/* SECTION 3 - RESTAURANTS */
 
 h3{
     padding-top: 30px;
@@ -176,9 +180,15 @@ h3{
                 }
                 .section3__icone{
                     font-size: 1.4em;
-
+                }
+                .coloredheart:active{
+                    color: linear-gradient(to bottom right, $secondary, $primary);
                 }
             }
+        }
+        a{
+            text-decoration: none;
+            color: black;
         }
     }
 }
@@ -189,6 +199,9 @@ img{
     height: auto;
     object-fit: cover;
 }
+
+
+/* FOOTER */
 
 footer{
     background-color: $footer;
