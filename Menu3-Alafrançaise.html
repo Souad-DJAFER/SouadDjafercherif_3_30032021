@@ -11,109 +11,129 @@
     </head>
 
     <body>
-        <header>
-            <p>Ohmyfood</p>
+
+        <!--HEADER-->
+        <header class="menuheader">
+            <a href="index.html" class="menuheader__a"><i class="fas fa-arrow-left menuheader__i"></i></a>
+            <p class="menuheader__p">Ohmyfood</p>
         </header>
 
         <!--SECTION PHOTO-->
-
         <section>
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Assiette Restaurant A La Française"/>
+            <img class="banner" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Assiette Restaurant A La Française"/>
         </section>
 
         <!--SECTION MENU-->
-
-        <section>
-            <div>
-                <h1>&Agrave; la française</h1>
-                <i class="far fa-heart"></i>
+        <section class="menu">
+            <div class="heading">
+                <h1 class="heading__h1">&Agrave; la française</h1>
+                <i class="far fa-heart heading__i"></i>
             </div>
 
-            <div class="entrees">
-                <h2>ENTR&Eacute;ES</h2>
-                <article>
-                    <p>Tartare de poulpe acidulé</p>
-                    <p>Aux zestes d'orange</p>
-                    <p>25€</p>
-                </article>
+            <!--ENTREES-->
+            <h2 class="menu__h2"><span class="underlined">ENTR</span>&Eacute;ES</h2>
+                <div class="courses">
+                    <article class="menu__article">
+                    <p class="mealname">Tartare de poulpe acidulé</p>
+                    <div class="articlelign2">
+                        <p class="articlelign2__p">Aux zestes d'orange</p>
+                        <p class="articlelign2__p">25€</p>
+                    </div>
+                    </article>
 
-                <article>
-                    <p>Velouté de légumes d'antan</p>
-                    <p>Carotte, panais, topinambour</p>
-                    <p>35€</p>
-                </article>
+                    <article class="menu__article">
+                        <p class="mealname">Velouté de légumes d'antan</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Carotte, panais, topinambour</p>
+                            <p class="articlelign2__p">35€</p>
+                        </div>
+                    </article>
 
-                <article>
-                    <p>Soupe à l'oignon</p>
-                    <p>Revisitée</p>
-                    <p>20€</p>
-                </article>
+                    <article class="menu__article">
+                        <p class="mealname">Soupe à l'oignon</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Revisitée</p>
+                            <p class="articlelign2__p">20€</p>
+                        </div>
+                    </article>
+                </div>
 
+            <!--PLATS-->
+            <h2 class="menu__h2"><span class="underlined">PLAT</span>S</h2>
+                <div class="courses">
+                        <article class="menu__article">
+                        <p class="mealname">Coquilles Saint-Jacques</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Accompagnées d'une purée de panais</p>
+                            <p class="articlelign2__p">40€</p>
+                        </div>
+                    </article>
+
+                    <article class="menu__article">
+                        <p class="mealname">Magret de canard</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Et parmentier de pommes de terre</p>
+                            <p class="articlelign2__p">35€</p>
+                        </div>
+                    </article>
+
+                    <article class="menu__article">
+                        <p class="mealname">Pigeonneau d’Ille-et-Vilaine</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Sur son lit de gnocchis aux légumes</p>
+                            <p class="articlelign2__p">44€</p>
+                        </div>
+                    </article>
+                </div>
+
+            <!--DESSERTS-->
+            <h2 class="menu__h2"><span class="underlined">DESS</span>ERTS</h2>
+                <div class="courses">
+                    <article class="menu__article">
+                        <p class="mealname">Pétales de violettes glacés</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Et purée de noisettes</p>
+                            <p class="articlelign2__p">18€</p>
+                        </div>
+                    </article>
+
+                    <article class="menu__article">
+                        <p class="mealname">Fondant au chocolat</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Revisité</p>
+                            <p class="articlelign2__p">22€</p>
+                        </div>
+                    </article>
+
+                    <article class="menu__article">
+                        <p class="mealname">Millefeuille croustillant</p>
+                        <div class="articlelign2">
+                            <p class="articlelign2__p">Myrtilles et pâte d’amande</p>
+                            <p class="articlelign2__p">23€</p>
+                        </div>
+                    </article>
+                </div>
+
+            <div class="button">
+                <button class="menu__button" type="submit">Commander</i></button>
             </div>
-
-            <div class="plats">
-                <h2>PLATS</h2>
-                <article>
-                    <p>Coquilles Saint-Jacques</p>
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40€</p>
-                </article>
-
-                <article>
-                    <p>Magret de canard</p>
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35€</p>
-                </article>
-
-                <article>
-                    <p>Pigeonneau d’Ille-et-Vilaine</p>
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44€</p>
-                </article>
-            </div>
-
-            <div class="desserts">
-                <h2>DESSERTS</h2>
-                <article>
-                    <p>Pétales de violettes glacés</p>
-                    <p>Et purée de noisettes</p>
-                    <p>18€</p>
-                </article>
-
-                <article>
-                    <p>Fondant au chocolat</p>
-                    <p>Revisité</p>
-                    <p>22€</p>
-                </article>
-
-                <article>
-                    <p>Millefeuille croustillant</p>
-                    <p>Myrtilles et pâte d’amande</p>
-                    <p>23€</p>
-                </article>
-            </div>
-
-            <button type="submit">Commander</i></button>
 
         </section>
 
         <!--FOOTER-->
-
         <footer>
-            <img src="images/logo/ohmyfood.png" alt="Logo Oh My Food !"/>
-            <ul>
-                <li>
-                    <i class="fas fa-utensils"></i>
-                    <p>Proposer un restaurant</p>
+            <p class="footer__logo">Ohmyfood</p>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <p><i class="fas fa-utensils footer__i"></i> Proposer un restaurant</p>
                 </li>
-                <li>
-                    <i class="fas fa-hands-helping"></i>
-                    <p>Devenir partenaire</p>
+                <li class="footer__li">  
+                    <p><i class="fas fa-hands-helping footer__i"></i> Devenir partenaire</p>
                 </li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
+                <li class="footer__li">Mentions légales</li>
+                <li class="footer__li"><a href="mailto:contact@openclassrooms.fr">Contact</a></li>
             </ul>
         </footer>
-
-        </body>
+        
+    </body>
 </html>
