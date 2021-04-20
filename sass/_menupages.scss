@@ -73,6 +73,7 @@ body{
             font-size: 1.5em;
         }
     }
+    
     .menu__h2{
         font-size: 1.2em;
         font-weight: lighter;
@@ -157,3 +158,12 @@ footer{
         }
     }
 }
+
+@media screen 
+        and (min-width : 768px) and (max-width : 1023px) 
+    {
+        body{
+            width: auto;
+        } 
+
+    } 
