@@ -373,9 +373,69 @@ footer .footer__li .footer__i {
   margin-right: 8px;
 }
 
+/* RESOLUTION TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     width: auto;
+  }
+
+  /*HEADER*/
+  .menuheader {
+    height: 100px;
+    /*A CHANGER*/
+  }
+  .menuheader .menuheader__a {
+    width: 25%;
+  }
+  .menuheader .menuheader__i {
+    font-size: 40px;
+  }
+  .menuheader .menuheader__p {
+    font-size: 50px;
+    width: 75%;
+  }
+
+  /*SECTION PHOTO*/
+  .banner {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+
+  /*SECTION MENU*/
+  .menu .heading {
+    justify-content: space-between;
+    padding: 20px 50px 0px 30px;
+  }
+  .menu .heading .heading__h1 {
+    font-size: 2em;
+  }
+  .menu .heading .far.fa-heart {
+    font-size: 2em;
+  }
+  .menu .menu__h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+  .menu .courses {
+    width: 100%;
+  }
+  .menu .menu__article {
+    width: 70%;
+    height: 80px;
+  }
+  .menu .menu__article .mealname {
+    font-size: 1.5em;
+  }
+  .menu .menu__article .articlelign2 .articlelign2__p {
+    font-size: 1.3em;
+  }
+  .menu .menu__button {
+    width: 250px;
+    height: 50px;
+    border-radius: 2em;
+    font-size: 23px;
+    margin: 50px 0 40px 0;
   }
 }
 /* RESOLUTION TABLETTE */
