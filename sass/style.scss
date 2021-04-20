@@ -199,9 +199,6 @@ h3{
     }
 }
 
-
-
-
 /* FOOTER */
 
 footer{
@@ -232,11 +229,12 @@ footer{
     }
 }
 
+
 @import "menupages";
 
 /* RESOLUTION TABLETTE */
 
-@media screen 
+@media screen
         and (min-width : 768px) and (max-width : 1023px) 
 {
         body{
@@ -322,6 +320,142 @@ footer{
             justify-content: space-around;
             .section3__article{
                 width: 46%;
+                .section3__box{
+                    .section3__divtext{
+                        font-size: 1.4em;
+                        .section3__h4{
+                            font-size: 1.2em;
+                        }
+                        .section3__p{
+                            margin: 5px 0 20px 0;
+                        }
+                    }
+                    .section3__icone{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+
+        /* FOOTER */
+
+    footer{
+        .footer__logo{
+            font-size: 1.8em;
+        }
+        .footer__ul{
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+            font-size: 1.3em;
+        }
+        .footer__li{
+            .footer__i{
+                margin-right: 13px;
+            }
+        }
+    }
+}
+
+
+/* RESOLUTION DESKTOP */
+
+@media screen 
+    and (min-width : 1024px)
+{
+
+    body{
+        width: auto;
+    } 
+
+    /*HEADER*/
+
+    header{
+        height: 160px;
+        font-size: 70px;
+        background: linear-gradient(to bottom right, $secondary, $primary);
+    }
+    
+    /* FORMULAIRE DE RECHERCHE */
+
+    .form{
+        height: 120px;
+        i{
+            font-size: 30px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .form__recherche{
+            font-size: 30px;
+        }
+    }
+
+    /* SECTION 1 - RESERVEZ ET EXPLOREZ */
+
+    #br{
+        display: none;
+    }
+
+    .section1{
+        .section1__h1{
+            font-size: 2.6em;
+            margin-bottom: 40px;
+        }
+        .section1__p{
+            font-size: 2.2em;
+        }
+        .section1__button{
+            width: 350px;
+            height: 70px; 
+            border-radius: 2em;
+            font-size: 1.7em;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+    }
+
+    /* SECTION 2 - FONCTIONNEMENT */
+
+    h2{
+        font-size: 2.3em;
+    }
+
+    .section2{
+        .section2__article{
+            width : 60%;
+            font-size: 30px;
+            .section2__number{
+                font-size: 30px;
+                width: 40px;
+                height: 40px;
+            }
+            .section2__i{
+                font-size: 30px;
+            }
+        }
+    }
+
+    /* SECTION 3 - RESTAURANTS */
+
+    h3{
+        font-size: 2.3em;
+    }
+
+    .section3{
+        .section3__block{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            .section3__article{
+                width: 43%;
+                }
+                .section3__img{
+                    width: 100%;
+                    /*Ne marche pas*/
+                    height: 250px;
                 }
                 .section3__box{
                     .section3__divtext{
@@ -339,35 +473,27 @@ footer{
                 }
             }
         }
+    }
 
         /* FOOTER */
 
     footer{
         .footer__logo{
-            font-size: 1.8em;
+            font-size: 2.5em;
         }
         .footer__ul{
             list-style: none;
             margin-bottom: 0;
             padding: 0;
-            font-size: 1.3em;
+            font-size: 1.8em;
         }
         .footer__li{
             .footer__i{
-                margin-right: 13px;
+                margin-right: 20px;
                 }
         }
     }
-}
 
-/* RESOLUTION TELEPHONE PORTABLE */
-
-@media screen 
-        and (min-width : 1024px)
-        {
-
-            
-        }
 
 
 

@@ -455,16 +455,16 @@ footer .footer__li .footer__i {
   .section3 .section3__block .section3__article {
     width: 46%;
   }
-  .section3 .section3__block .section3__box .section3__divtext {
+  .section3 .section3__block .section3__article .section3__box .section3__divtext {
     font-size: 1.4em;
   }
-  .section3 .section3__block .section3__box .section3__divtext .section3__h4 {
+  .section3 .section3__block .section3__article .section3__box .section3__divtext .section3__h4 {
     font-size: 1.2em;
   }
-  .section3 .section3__block .section3__box .section3__divtext .section3__p {
+  .section3 .section3__block .section3__article .section3__box .section3__divtext .section3__p {
     margin: 5px 0 20px 0;
   }
-  .section3 .section3__block .section3__box .section3__icone {
+  .section3 .section3__block .section3__article .section3__box .section3__icone {
     font-size: 1.4em;
   }
 
@@ -482,6 +482,116 @@ footer .footer__li .footer__i {
     margin-right: 13px;
   }
 }
-/* RESOLUTION TELEPHONE PORTABLE */
+/* RESOLUTION DESKTOP */
+@media screen and (min-width: 1024px) {
+  body {
+    width: auto;
+  }
+
+  /*HEADER*/
+  header {
+    height: 160px;
+    font-size: 70px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  }
+
+  /* FORMULAIRE DE RECHERCHE */
+  .form {
+    height: 120px;
+  }
+  .form i {
+    font-size: 30px;
+  }
+  .form p {
+    font-size: 25px;
+  }
+  .form .form__recherche {
+    font-size: 30px;
+  }
+
+  /* SECTION 1 - RESERVEZ ET EXPLOREZ */
+  #br {
+    display: none;
+  }
+
+  .section1 .section1__h1 {
+    font-size: 2.6em;
+    margin-bottom: 40px;
+  }
+  .section1 .section1__p {
+    font-size: 2.2em;
+  }
+  .section1 .section1__button {
+    width: 350px;
+    height: 70px;
+    border-radius: 2em;
+    font-size: 1.7em;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  /* SECTION 2 - FONCTIONNEMENT */
+  h2 {
+    font-size: 2.3em;
+  }
+
+  .section2 .section2__article {
+    width: 60%;
+    font-size: 30px;
+  }
+  .section2 .section2__article .section2__number {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .section2 .section2__article .section2__i {
+    font-size: 30px;
+  }
+
+  /* SECTION 3 - RESTAURANTS */
+  h3 {
+    font-size: 2.3em;
+  }
+
+  .section3 .section3__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .section3 .section3__block .section3__article {
+    width: 43%;
+  }
+  .section3 .section3__block .section3__img {
+    width: 100%;
+    /*Ne marche pas*/
+    height: 250px;
+  }
+  .section3 .section3__block .section3__box .section3__divtext {
+    font-size: 1.4em;
+  }
+  .section3 .section3__block .section3__box .section3__divtext .section3__h4 {
+    font-size: 1.2em;
+  }
+  .section3 .section3__block .section3__box .section3__divtext .section3__p {
+    margin: 5px 0 20px 0;
+  }
+  .section3 .section3__block .section3__box .section3__icone {
+    font-size: 1.4em;
+  }
+}
+/* FOOTER */
+footer .footer__logo {
+  font-size: 2.5em;
+}
+footer .footer__ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 1.8em;
+}
+footer .footer__li .footer__i {
+  margin-right: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
