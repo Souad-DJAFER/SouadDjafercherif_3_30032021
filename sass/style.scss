@@ -8,300 +8,115 @@ body{
     * {
         box-sizing:border-box;
     }
-}
 
-/*HEADER*/
-
-header{
-    height:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: Shrikhand;
-    font-size: 25px;
-}
-
-/* FORMULAIRE DE RECHERCHE */
-
-.form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    background-color: $bg-darkgrey;
-    width: 100%;
-    box-shadow: inset 5px 8px 8px -10px grey;
-    i{
-        font-size: 15px;
-    }
-    .form__recherche{
-        padding-left: 14px;
-        height: 25px;
-        font-size: 15px;
-        margin: 0;
-        padding-top: 4px;
-    }
-}
-
-/* SECTION 1 - RESERVEZ ET EXPLOREZ */
-
-.section1{
-    background-color: $bg-lightgrey;
-    text-align: center;
-    .section1__h1{
-        font-size: 1.4em;
-        margin-top: 0;
-        padding: 40px 10px 10px 10px;
-        margin-bottom: 5px;
-    }
-    .section1__p{
-        font-size: 1em;
-        margin-top: 5px;
-        margin-bottom: 30px;
-    }
-    .section1__button{
-        background: linear-gradient(to bottom right, $secondary, $primary);
-        color: white;
-        width: 180px;
-        height: 40px; 
-        border-radius: 1.5em;
-        border: 0px;
-        margin-bottom: 40px;
-        box-shadow: 1px 1px 12px rgb(197, 197, 197);
-    }
-}
-
-/* SECTION 2 - FONCTIONNEMENT */
-
-h2{
-    padding-top: 30px;
-    padding-bottom: 15px;
-    margin-left: 20px;
-}
-
-.section2{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .section2__article{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        width : 85%;
-        background-color: $bg-lightgrey;
-        border-radius: 1em;
-        margin-bottom: 20px;
-        box-shadow: 1px 1px 12px rgb(197, 197, 197);
-        .section2__number{
-            color: white;
-            font-size: 20px;
-            background-color: $primary;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            margin-left : -15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .section2__i{
-            font-size: 20px;
-            margin: 0 20px 0 20px;
-            color: gray;
-        }
-        &:hover{
-            background-color: $click-article;
-            .section2__i{
-                color: $primary;
-            }
-        }
-    }
-}
-
-/* SECTION 3 - RESTAURANTS */
-
-h3{
-    padding-top: 50px;
-    padding-bottom: 15px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.section3{
-    background-color: $bg-lightgrey;
-    margin-top: 30px;
-    .section3__block{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        padding-bottom: 40px;
-        .section3__article{
-            background-color: white;
-            border-radius: 1em;
-            box-shadow: 1px 1px 12px rgb(197, 197, 197);
-            width: 90%;
-            margin-bottom: 20px;
-            position: relative;
-            .greensign{
-                position: absolute;
-                top: 10px;
-                right: 15px;
-                background-color: $tertiary;
-                margin: 0;
-                padding: 7px 12px 5px 12px;
-                border-radius: 2px;
-                .greensign__p{
-                    color: #249c7f;
-                    margin: 0;
-                    font-weight: bold;
-                }
-            }
-            .section3__img{
-                width: 100%;
-                height: 170px;
-                object-fit: cover;
-                border-radius: 1em 1em 0 0;
-                object-position: bottom;
-                &.imgfitcenter{
-                    object-position: center;
-                }
-            }
-            .section3__box{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                .section3__divtext{
-                    display: flex;
-                    flex-direction: column;
-                    width: 87%;
-                    padding-left: 20px;
-                    font-size: 1.2em;
-                    .section3__h4{
-                        margin: 0;
-                        padding-top: 10px;
-                    }
-                    .section3__p{
-                        margin: 5px 0 20px 0;
-                    }
-                }
-                .section3__icone{
-                    font-size: 1.4em;
-                }
-            }
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-    }
-}
-
-/* FOOTER */
-
-footer{
-    background-color: $footer;
-    color: white;
-    padding : 20px;
-    .footer__logo{
-        font-family: Shrikhand;
-        font-size: 1.3em;
-        margin-top: 0;
-    }
-    .footer__ul{
-        list-style: none;
-        margin-bottom: 0;
-        padding: 0;
-        font-size: 1.1em;
-    }
-    .footer__li{
-        margin-bottom: 10px;
-        .footer__i{
-            width: 16px;
-            margin-right: 8px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-    }
-}
-
-
-@import "menupages";
-
-/* RESOLUTION TABLETTE */
-
-@media screen
-        and (min-width : 768px) and (max-width : 1023px) 
-{
-        body{
-            width: auto;
-        } 
-
-        /*HEADER*/
+    /*HEADER*/
 
     header{
-        height: 110px;
-        font-size: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: Shrikhand;
+        font-size: 25px;
     }
 
     /* FORMULAIRE DE RECHERCHE */
 
     .form{
-        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: $bg-darkgrey;
+        width: 100%;
+        box-shadow: inset 5px 8px 8px -10px grey;
         i{
-            font-size: 30px;
+            font-size: 15px;
         }
         .form__recherche{
             padding-left: 14px;
             height: 25px;
-            font-size: 25px;
-            /*Ne marche pas*/
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin: 0;
+            padding-top: 4px;
         }
     }
 
     /* SECTION 1 - RESERVEZ ET EXPLOREZ */
 
-        #br{
-            display: none;
+    .section1{
+        background-color: $bg-lightgrey;
+        text-align: center;
+        .section1__h1{
+            font-size: 1.4em;
+            margin-top: 0;
+            padding: 40px 10px 10px 10px;
+            margin-bottom: 5px;
         }
-
-        .section1{
-            .section1__h1{
-                font-size: 2em;
-            }
-            .section1__p{
-                font-size: 1.5em;
-            }
-            .section1__button{
-                width: 260px;
-                height: 50px; 
-                border-radius: 2em;
-                font-size: 1.2em;
+        .section1__p{
+            font-size: 1em;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+        .section1__button{
+            background: linear-gradient(to bottom right, $secondary, $primary);
+            color: white;
+            width: 180px;
+            height: 40px; 
+            border-radius: 1.5em;
+            border: 0px;
+            margin-bottom: 40px;
+            box-shadow: 1px 1px 12px rgb(197, 197, 197);
+            &:hover{
+                @extend %buttonhover;
             }
         }
+    }
 
-        /* SECTION 2 - FONCTIONNEMENT */
+    /* SECTION 2 - FONCTIONNEMENT */
 
     h2{
-        font-size: 2em;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        margin-left: 20px;
     }
 
     .section2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         .section2__article{
-            width : 70%;
-            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            width : 85%;
+            background-color: $bg-lightgrey;
+            border-radius: 1em;
+            margin-bottom: 20px;
+            box-shadow: 1px 1px 12px rgb(197, 197, 197);
             .section2__number{
-                font-size: 30px;
-                width: 40px;
-                height: 40px;
+                color: white;
+                font-size: 20px;
+                background-color: $primary;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                margin-left : -15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .section2__i{
-                font-size: 30px;
+                font-size: 20px;
+                margin: 0 20px 0 20px;
+                color: gray;
+            }
+            &:hover{
+                background-color: $click-article;
+                .section2__i{
+                    color: $primary;
+                }
             }
         }
     }
@@ -309,22 +124,66 @@ footer{
     /* SECTION 3 - RESTAURANTS */
 
     h3{
-        font-size: 2em;
+        padding-top: 50px;
+        padding-bottom: 15px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
     }
 
     .section3{
+        background-color: $bg-lightgrey;
+        margin-top: 30px;
         .section3__block{
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 40px;
             .section3__article{
-                width: 46%;
+                background-color: white;
+                border-radius: 1em;
+                box-shadow: 1px 1px 12px rgb(197, 197, 197);
+                width: 90%;
+                margin-bottom: 20px;
+                position: relative;
+                .greensign{
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    background-color: $tertiary;
+                    margin: 0;
+                    padding: 7px 12px 5px 12px;
+                    border-radius: 2px;
+                    .greensign__p{
+                        color: #249c7f;
+                        margin: 0;
+                        font-weight: bold;
+                    }
+                }
+                .section3__img{
+                    width: 100%;
+                    height: 170px;
+                    object-fit: cover;
+                    border-radius: 1em 1em 0 0;
+                    object-position: bottom;
+                    &.imgfitcenter{
+                        object-position: center;
+                    }
+                }
                 .section3__box{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
                     .section3__divtext{
-                        font-size: 1.4em;
+                        display: flex;
+                        flex-direction: column;
+                        width: 87%;
+                        padding-left: 20px;
+                        font-size: 1.2em;
                         .section3__h4{
-                            font-size: 1.2em;
+                            margin: 0;
+                            padding-top: 10px;
                         }
                         .section3__p{
                             margin: 5px 0 20px 0;
@@ -335,29 +194,171 @@ footer{
                     }
                 }
             }
+            a{
+                text-decoration: none;
+                color: black;
+            }
         }
     }
 
-        /* FOOTER */
+    /* FOOTER */
 
     footer{
+        background-color: $footer;
+        color: white;
+        padding : 20px;
         .footer__logo{
-            font-size: 1.8em;
+            font-family: Shrikhand;
+            font-size: 1.3em;
+            margin-top: 0;
         }
         .footer__ul{
             list-style: none;
             margin-bottom: 0;
             padding: 0;
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
         .footer__li{
+            margin-bottom: 10px;
             .footer__i{
-                margin-right: 13px;
+                width: 16px;
+                margin-right: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
             }
         }
     }
 }
 
+@import "menupages";
+
+/* RESOLUTION TABLETTE */
+
+@media screen
+        and (min-width : 768px) and (max-width : 1023px) 
+{
+    body{
+        width: auto; 
+
+        /*HEADER*/
+
+        header{
+            height: 110px;
+            font-size: 50px;
+        }
+
+        /* FORMULAIRE DE RECHERCHE */
+
+        .form{
+            height: 80px;
+            i{
+                font-size: 30px;
+            }
+            .form__recherche{
+                padding-left: 14px;
+                height: 25px;
+                font-size: 25px;
+                /*Ne marche pas*/
+                margin-bottom: 10px;
+            }
+        }
+
+        /* SECTION 1 - RESERVEZ ET EXPLOREZ */
+
+            #br{
+                display: none;
+            }
+
+            .section1{
+                .section1__h1{
+                    font-size: 2em;
+                }
+                .section1__p{
+                    font-size: 1.5em;
+                }
+                .section1__button{
+                    width: 260px;
+                    height: 50px; 
+                    border-radius: 2em;
+                    font-size: 1.2em;
+                }
+            }
+
+            /* SECTION 2 - FONCTIONNEMENT */
+
+        h2{
+            font-size: 2em;
+        }
+
+        .section2{
+            .section2__article{
+                width : 70%;
+                font-size: 30px;
+                .section2__number{
+                    font-size: 30px;
+                    width: 40px;
+                    height: 40px;
+                }
+                .section2__i{
+                    font-size: 30px;
+                }
+            }
+        }
+
+        /* SECTION 3 - RESTAURANTS */
+
+        h3{
+            font-size: 2em;
+        }
+
+        .section3{
+            .section3__block{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                .section3__article{
+                    width: 46%;
+                    .section3__box{
+                        .section3__divtext{
+                            font-size: 1.4em;
+                            .section3__h4{
+                                font-size: 1.2em;
+                            }
+                            .section3__p{
+                                margin: 5px 0 20px 0;
+                            }
+                        }
+                        .section3__icone{
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+
+            /* FOOTER */
+
+        footer{
+            .footer__logo{
+                font-size: 1.8em;
+            }
+            .footer__ul{
+                list-style: none;
+                margin-bottom: 0;
+                padding: 0;
+                font-size: 1.3em;
+            }
+            .footer__li{
+                .footer__i{
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+}
 
 /* RESOLUTION DESKTOP */
 
@@ -367,133 +368,128 @@ footer{
 
     body{
         width: auto;
-    } 
+     
+        /*HEADER*/
 
-    /*HEADER*/
-
-    header{
-        height: 160px;
-        font-size: 70px;
-        background: linear-gradient(to bottom right, $secondary, $primary);
-    }
-    
-    /* FORMULAIRE DE RECHERCHE */
-
-    .form{
-        height: 120px;
-        i{
-            font-size: 30px;
+        header{
+            height: 160px;
+            font-size: 70px;
+            background: linear-gradient(to bottom right, $secondary, $primary);
         }
-        p{
-            font-size: 25px;
-        }
-        .form__recherche{
-            font-size: 30px;
-        }
-    }
+        
+        /* FORMULAIRE DE RECHERCHE */
 
-    /* SECTION 1 - RESERVEZ ET EXPLOREZ */
-
-    #br{
-        display: none;
-    }
-
-    .section1{
-        .section1__h1{
-            font-size: 2.6em;
-            margin-bottom: 40px;
-        }
-        .section1__p{
-            font-size: 2.2em;
-        }
-        .section1__button{
-            width: 350px;
-            height: 70px; 
-            border-radius: 2em;
-            font-size: 1.7em;
-            margin-top: 20px;
-            margin-bottom: 60px;
-        }
-    }
-
-    /* SECTION 2 - FONCTIONNEMENT */
-
-    h2{
-        font-size: 2.3em;
-    }
-
-    .section2{
-        .section2__article{
-            width : 60%;
-            font-size: 30px;
-            .section2__number{
+        .form{
+            height: 120px;
+            i{
                 font-size: 30px;
-                width: 40px;
-                height: 40px;
             }
-            .section2__i{
+            p{
+                font-size: 25px;
+            }
+            .form__recherche{
                 font-size: 30px;
             }
         }
-    }
 
-    /* SECTION 3 - RESTAURANTS */
+        /* SECTION 1 - RESERVEZ ET EXPLOREZ */
 
-    h3{
-        font-size: 2.3em;
-    }
+        #br{
+            display: none;
+        }
 
-    .section3{
-        .section3__block{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-            .section3__article{
-                width: 43%;
+        .section1{
+            .section1__h1{
+                font-size: 2.6em;
+                margin-bottom: 40px;
+            }
+            .section1__p{
+                font-size: 2.2em;
+            }
+            .section1__button{
+                width: 350px;
+                height: 70px; 
+                border-radius: 2em;
+                font-size: 1.7em;
+                margin-top: 20px;
+                margin-bottom: 60px;
+            }
+        }
+
+        /* SECTION 2 - FONCTIONNEMENT */
+
+        h2{
+            font-size: 2.3em;
+        }
+
+        .section2{
+            .section2__article{
+                width : 60%;
+                font-size: 30px;
+                .section2__number{
+                    font-size: 30px;
+                    width: 40px;
+                    height: 40px;
                 }
-                .section3__img{
-                    width: 100%;
-                    /*Ne marche pas*/
-                    height: 250px;
+                .section2__i{
+                    font-size: 30px;
                 }
-                .section3__box{
-                    .section3__divtext{
-                        font-size: 1.4em;
-                        .section3__h4{
-                            font-size: 1.2em;
-                        }
-                        .section3__p{
-                            margin: 5px 0 20px 0;
-                        }
+            }
+        }
+
+        /* SECTION 3 - RESTAURANTS */
+
+        h3{
+            font-size: 2.3em;
+        }
+
+        .section3{
+            .section3__block{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                .section3__article{
+                    width: 43%;
+                    .section3__img{
+                        width: 100%;
+                        height: 250px;
                     }
-                    .section3__icone{
-                        font-size: 1.4em;
+                    .section3__box{
+                        .section3__divtext{
+                            font-size: 1.4em;
+                            .section3__h4{
+                                font-size: 1.2em;
+                            }
+                            .section3__p{
+                                margin: 5px 0 20px 0;
+                            }
+                        }
+                        .section3__icone{
+                            font-size: 1.4em;
+                        }
                     }
                 }
             }
         }
+
+            /* FOOTER */
+
+        footer{
+            .footer__logo{
+                font-size: 2.5em;
+            }
+            .footer__ul{
+                list-style: none;
+                margin-bottom: 0;
+                padding: 0;
+                font-size: 1.8em;
+            }
+            .footer__li{
+                .footer__i{
+                    margin-right: 20px;
+                    }
+            }
+        }
     }
-
-        /* FOOTER */
-
-    footer{
-        .footer__logo{
-            font-size: 2.5em;
-        }
-        .footer__ul{
-            list-style: none;
-            margin-bottom: 0;
-            padding: 0;
-            font-size: 1.8em;
-        }
-        .footer__li{
-            .footer__i{
-                margin-right: 20px;
-                }
-        }
-    }
-
-
-
-
+}

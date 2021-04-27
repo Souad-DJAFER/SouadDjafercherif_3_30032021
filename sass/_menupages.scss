@@ -20,6 +20,7 @@ body{
     background-color: $bg-lightgrey;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
         .menuheader__a{
             text-decoration: none;
             color: black;
@@ -33,7 +34,9 @@ body{
             }
         .menuheader__p{
             font-size: 25px;
-            width: 75%;
+        }
+        #space{
+            width: 25%;
         }
 }
 
@@ -71,6 +74,8 @@ body{
         }
         .far.fa-heart{
             font-size: 1.5em;
+            color: black;
+
         }
     }
     
@@ -130,6 +135,10 @@ body{
         margin-bottom: 40px;
         margin-top: 30px;
         box-shadow: 1px 1px 12px rgb(197, 197, 197);
+        &:hover{
+            background: linear-gradient(to bottom right, #FF93FA, #AD70F6);
+            box-shadow: 2px 2px 14px rgb(121, 121, 121);
+        }
     }
 }
 

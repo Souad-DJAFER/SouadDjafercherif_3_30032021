@@ -5,3 +5,13 @@ $bg-darkgrey: #eaeaea;
 $bg-lightgrey: #f6f6f6;
 $footer: #353535;
 $click-article: #f5edff;
+
+
+%buttonhover{
+    background: linear-gradient(to bottom right, #FF93FA, #AD70F6);
+    box-shadow: 2px 2px 14px rgb(121, 121, 121);
+}
+
+%fasfa-heart{
+    background: linear-gradient(to bottom right, $secondary, $primary);
+}
