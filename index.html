@@ -11,134 +11,140 @@
     </head>
 
     <body>
-        <header>
-            <p>Ohmyfood</p>
-        </header>
-
-        <!--FORMULAIRE DE RECHERCHE-->
-        <div class="form">
-            <i class="fas fa-map-marker-alt"></i>
-            <p class="form__recherche">Paris, Belleville</p>
+        <div id="loader-container">
+            <div class="loader">
+                <span></span>
+            </div>
         </div>
+        
+            <header>
+                <p>Ohmyfood</p>
+            </header>
 
-        <!--SECTION 1 - RESERVEZ ET EXPLOREZ-->
-        <section class="section1">
-            <h1 class="section1__h1">Réservez le menu qui<span id="br"><br/></span> vous convient</h1>
-            <p class="section1__p">Découvrez des restaurants d'exception,<br/> sélectionnés par nos soins.</p>
-            <button class="section1__button" type="submit">Explorer nos restaurants</button>
-        </section>
+            <!--FORMULAIRE DE RECHERCHE-->
+            <div class="form">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="form__recherche">Paris, Belleville</p>
+            </div>
 
-        <!--SECTION 2 - FONCTIONNEMENT-->
-        <h2>Fonctionnement</h2>
-        <section class="section2">
-                <article class="section2__article">
-                    <p class="section2__number">1</p>
-                    <i class="fas fa-mobile-alt section2__i"></i>
-                    <p>Choisissez un restaurant</p>
-                </article>
+            <!--SECTION 1 - RESERVEZ ET EXPLOREZ-->
+            <section class="section1">
+                <h1 class="section1__h1">Réservez le menu qui<span id="br"><br/></span> vous convient</h1>
+                <p class="section1__p">Découvrez des restaurants d'exception,<br/> sélectionnés par nos soins.</p>
+                <button class="section1__button" type="submit">Explorer nos restaurants</button>
+            </section>
 
-                <article class="section2__article">
-                    <p class="section2__number">2</p>
-                    <i class="fas fa-list section2__i"></i>
-                    <p>Composez votre menu</p>
-                </article>
+            <!--SECTION 2 - FONCTIONNEMENT-->
+            <h2>Fonctionnement</h2>
+            <section class="section2">
+                    <article class="section2__article">
+                        <p class="section2__number">1</p>
+                        <i class="fas fa-mobile-alt section2__i"></i>
+                        <p>Choisissez un restaurant</p>
+                    </article>
 
-                <article class="section2__article section2__article-click">
-                    <p class="section2__number">3</p>
-                    <i class="fas fa-store section2__i"></i>
-                    <p>Dégustez au restaurant</p>
-                </article>
-        </section>
+                    <article class="section2__article">
+                        <p class="section2__number">2</p>
+                        <i class="fas fa-list section2__i"></i>
+                        <p>Composez votre menu</p>
+                    </article>
 
-        <!--SECTION 3 - RESTAURANTS-->
-        <section class="section3">
-            <h3>Restaurants</h3>
-            <div class="section3__block">
-                <article class="section3__article">
-                    <a href="Menu1-Palettedugout.html">
-                    <img class="section3__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo Assiette Restaurant La Palette du Goût"/>
-                    <div class="greensign">
-                        <p class="greensign__p">Nouveau</p>
-                    </div>
+                    <article class="section2__article section2__article-click">
+                        <p class="section2__number">3</p>
+                        <i class="fas fa-store section2__i"></i>
+                        <p>Dégustez au restaurant</p>
+                    </article>
+            </section>
+
+            <!--SECTION 3 - RESTAURANTS-->
+            <section class="section3">
+                <h3>Restaurants</h3>
+                <div class="section3__block">
+                    <article class="section3__article">
+                        <a href="Menu1-Palettedugout.html">
+                        <img class="section3__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo Assiette Restaurant La Palette du Goût"/>
+                        <div class="greensign">
+                            <p class="greensign__p">Nouveau</p>
+                        </div>
                         <div class="section3__box">
                             <div class="section3__divtext">
                                 <h4 class="section3__h4">La palette du goût</h4>
                                 <p class="section3__p">Ménilmontant</p>
-                            </div>
-                            <div class="section3__icone">
-                                <i class="far fa-heart section3__icone-vide"></i>
-                                <i class="fas fa-heart section3__icone-plein"></i>
-                            </div>
+                            </div>    
                         </div>
-                    </a>
-                </article>
-
-                <article class="section3__article">
-                    <a href="Menu2-Noteenchantée.html">
-                    <img class="section3__img imgfitcenter" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo Assiette Restaurant La note enchantée"/>
-                    <div class="greensign">
-                        <p class="greensign__p">Nouveau</p>
-                    </div>
-                        <div class="section3__box">
-                            <div class="section3__divtext">
-                                <h4 class="section3__h4">La note enchantée</h4>
-                                <p class="section3__p">Charonne</p>
-                            </div>
-                            <div class="section3__icone">
-                                <i class="far fa-heart section3__icone-vide"></i>
-                                <i class="fas fa-heart section3__icone-plein"></i>
-                            </div>
+                        </a>
+                        <div class="section3__icone">
+                            <i class="far fa-heart section3__icone-vide"></i>
+                            <i class="fas fa-heart section3__icone-plein"></i>
                         </div>
-                    </a>
-                </article>
+                    </article>
 
-                <article class="section3__article">
-                    <a href="Menu3-Alafrançaise.html">
-                    <img class="section3__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Assiette Restaurant A la française"/>
-                        <div class="section3__box">
-                            <div class="section3__divtext"> 
-                                <h4 class="section3__h4">&Agrave; la française</h4>
-                                <p class="section3__p">Cité Rouge</p>
-                            </div>
-                            <div class="section3__icone">
-                                <i class="far fa-heart section3__icone-vide"></i>
-                                <i class="fas fa-heart section3__icone-plein"></i>
-                            </div>
+                    <article class="section3__article">
+                        <a href="Menu2-Noteenchantée.html">
+                        <img class="section3__img imgfitcenter" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo Assiette Restaurant La note enchantée"/>
+                        <div class="greensign">
+                            <p class="greensign__p">Nouveau</p>
                         </div>
-                    </a>
-                </article>
-
-                <article class="section3__article">
-                    <a href="Menu4-Délicedessens.html">
-                    <img class="section3__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo Assiette Restaurant Le délice des sens"/>
-                        <div class="section3__box">
-                            <div class="section3__divtext"> 
-                                <h4 class="section3__h4">Le délice des sens</h4>
-                                <p class="section3__p">Folie-Méricourt</p>
+                            <div class="section3__box">
+                                <div class="section3__divtext">
+                                    <h4 class="section3__h4">La note enchantée</h4>
+                                    <p class="section3__p">Charonne</p>
+                                </div>
+                                <div class="section3__icone">
+                                    <i class="far fa-heart section3__icone-vide"></i>
+                                    <i class="fas fa-heart section3__icone-plein"></i>
+                                </div>
                             </div>
-                            <div class="section3__icone">
-                                <i class="far fa-heart section3__icone-vide"></i>
-                                <i class="fas fa-heart section3__icone-plein"></i>
-                            </div>
-                        </div>
-                    </a> 
-                </article>
-            </div>
-        </section>
+                        </a>
+                    </article>
 
-        <!--FOOTER-->
-        <footer>
-            <p class="footer__logo">Ohmyfood</p>
-            <ul class="footer__ul">
-                <li class="footer__li">
-                    <p><i class="fas fa-utensils footer__i"></i> Proposer un restaurant</p>
-                </li>
-                <li class="footer__li">  
-                    <p><i class="fas fa-hands-helping footer__i"></i> Devenir partenaire</p>
-                </li>
-                <li class="footer__li">Mentions légales</li>
-                <li class="footer__li"><a href="mailto:contact@openclassrooms.fr">Contact</a></li>
-            </ul>
-        </footer>
+                    <article class="section3__article">
+                        <a href="Menu3-Alafrançaise.html">
+                        <img class="section3__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Assiette Restaurant A la française"/>
+                            <div class="section3__box">
+                                <div class="section3__divtext"> 
+                                    <h4 class="section3__h4">&Agrave; la française</h4>
+                                    <p class="section3__p">Cité Rouge</p>
+                                </div>
+                                <div class="section3__icone">
+                                    <i class="far fa-heart section3__icone-vide"></i>
+                                    <i class="fas fa-heart section3__icone-plein"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="section3__article">
+                        <a href="Menu4-Délicedessens.html">
+                        <img class="section3__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo Assiette Restaurant Le délice des sens"/>
+                            <div class="section3__box">
+                                <div class="section3__divtext"> 
+                                    <h4 class="section3__h4">Le délice des sens</h4>
+                                    <p class="section3__p">Folie-Méricourt</p>
+                                </div>
+                                <div class="section3__icone">
+                                    <i class="far fa-heart section3__icone-vide"></i>
+                                    <i class="fas fa-heart section3__icone-plein"></i>
+                                </div>
+                            </div>
+                        </a> 
+                    </article>
+                </div>
+            </section>
+
+            <!--FOOTER-->
+            <footer>
+                <p class="footer__logo">Ohmyfood</p>
+                <ul class="footer__ul">
+                    <li class="footer__li">
+                        <p><i class="fas fa-utensils footer__i"></i> Proposer un restaurant</p>
+                    </li>
+                    <li class="footer__li">  
+                        <p><i class="fas fa-hands-helping footer__i"></i> Devenir partenaire</p>
+                    </li>
+                    <li class="footer__li">Mentions légales</li>
+                    <li class="footer__li"><a href="mailto:contact@openclassrooms.fr">Contact</a></li>
+                </ul>
+            </footer>
     </body>
 </html>

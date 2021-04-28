@@ -18,6 +18,65 @@ body {
 body * {
   box-sizing: border-box;
 }
+@keyframes fadeoutloader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+body #loader-container {
+  position: fixed;
+  background-color: white;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeoutloader 3s forwards;
+}
+body #loader-container .loader {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #240229;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.4), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+body #loader-container .loader:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #240229;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2), inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+body #loader-container .loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(-225deg, #FF79DA 0%, #9356DC 100%);
+  filter: blur(20px);
+  z-index: 9;
+  animation: animate 0.5s linear infinite alternate;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body header {
   height: 50px;
   display: flex;
@@ -189,8 +248,9 @@ body .section3 .section3__block .section3__article a {
 }
 body .section3 .section3__block .section3__article .section3__icone {
   font-size: 1.6em;
-  position: relative;
-  padding-bottom: 40px;
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
 }
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide {
   position: absolute;
@@ -200,7 +260,7 @@ body .section3 .section3__block .section3__article .section3__icone .section3__i
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide:hover {
   opacity: 0;
   /*ne marche pas*/
-  transition: transform 1000ms;
+  transition: opacity 1000ms;
 }
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide a {
   display: none;
@@ -215,7 +275,7 @@ body .section3 .section3__block .section3__article .section3__icone .section3__i
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein:hover {
   opacity: 1;
   /*ne marche pas*/
-  transition: transform 1000ms;
+  transition: opacity 1000ms;
 }
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein a {
   display: none;
