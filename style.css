@@ -183,12 +183,42 @@ body .section3 .section3__block .section3__article .section3__box .section3__div
 body .section3 .section3__block .section3__article .section3__box .section3__divtext .section3__p {
   margin: 5px 0 20px 0;
 }
-body .section3 .section3__block .section3__article .section3__box .section3__icone {
-  font-size: 1.4em;
-}
-body .section3 .section3__block a {
+body .section3 .section3__block .section3__article a {
   text-decoration: none;
   color: black;
+}
+body .section3 .section3__block .section3__article .section3__icone {
+  font-size: 1.6em;
+  position: relative;
+  padding-bottom: 40px;
+}
+body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide {
+  position: absolute;
+  opacity: 1;
+  /*ne marche pas*/
+}
+body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide:hover {
+  opacity: 0;
+  /*ne marche pas*/
+  transition: transform 1000ms;
+}
+body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide a {
+  display: none;
+}
+body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein {
+  /*ne marche pas*/
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  position: absolute;
+  opacity: 0;
+  /*ne marche pas*/
+}
+body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein:hover {
+  opacity: 1;
+  /*ne marche pas*/
+  transition: transform 1000ms;
+}
+body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein a {
+  display: none;
 }
 body footer {
   background-color: #353535;
