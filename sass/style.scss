@@ -20,7 +20,7 @@ body{
 
     #loader-container{
         position: fixed;
-        background-color: white;
+        background-color: $bg-darkgrey;
         inset: 0;
         display: flex;
         justify-content: center;
@@ -50,7 +50,7 @@ body{
         right: 25px;
         bottom: 25px;
         z-index: 10;
-        background: white;
+        background: $bg-darkgrey;
         border-radius: 50%;
         border: 2px solid #240229;
         box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
@@ -281,24 +281,15 @@ body{
                             /*ne marche pas*/
                             transition: opacity 1000ms;
                         }
-                        /*ne marche pas*/
-                        a{
-                            display: none;
-                        }
                     }
                     .section3__icone-plein{
-                        /*ne marche pas*/
-                        color: linear-gradient(to bottom right, $secondary, $primary);
                         position: absolute;
                         opacity: 0;
                         &:hover{
                             opacity: 1;
+                            color: linear-gradient(to bottom right, $secondary, $primary);
                             /*ne marche pas*/
                             transition: opacity 1000ms;
-                        }
-                        /*ne marche pas*/
-                        a{
-                            display: none;
                         }
                     }
                 }
