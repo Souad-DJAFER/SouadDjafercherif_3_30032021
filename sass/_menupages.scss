@@ -50,7 +50,6 @@ body{
 
 /*SECTION MENU*/
 
-
 .menu{
     background-color: $bg-lightgrey;
     font-family: Roboto;
@@ -61,10 +60,31 @@ body{
     width: 100%;
     position: relative;
     @keyframes transition {
-        0%   { margin-top: -70px;opacity:0; }
-        100% { margin-top: 0;opacity:1; }
+        0%   { 
+            transform: translateY(50px);
+            opacity:0; 
         }
-        div {opacity:0;animation: transition 1s ease-in-out 2s forwards;}
+        100% { 
+            transform: translateY(0px);
+            opacity:1; 
+        }
+    }
+    .menu__article {
+        opacity: 0;
+        animation: transition 1s ease-in-out 2s forwards;
+        &:nth-child(2){
+            animation: transition 1s ease-in-out 2.5s forwards;
+        }
+        &:nth-child(3){
+            animation: transition 1s ease-in-out 3s forwards;
+        }
+    }
+        /*A VOIR AVEC QUENTIN
+        @keyframes transition {
+        0%   { translateY: 0px; opacity:0; }
+        100% { translateY: 20px; opacity:1; }
+        }
+        */
     .heading{
         display: flex;
         flex-direction: row;
@@ -73,15 +93,40 @@ body{
         margin-top: 0;
         padding: 20px 20px 0px 0;
         width: 100%;
+        position: relative;
         .heading__h1{
             font-size: 1.5em;
             font-family: Shrikhand;
             margin: 5px 20px 5px 0px;
         }
-        .far.fa-heart{
+        .heading__icone{
             font-size: 1.5em;
             color: black;
-
+            right: 0;
+            /*A VOIR AVEC QUENTIN*/
+            position: absolute;
+            .heading__icone-vide{
+                position: absolute;
+                opacity: 1;
+                right: 0;
+                &:hover{
+                    opacity: 0;
+                    /*A VOIR AVEC QUENTIN*/
+                    transition: opacity 1000ms;
+                }
+            }
+            .heading__icone-plein{
+                position: absolute;
+                opacity: 0;
+                right: 0;
+                &:hover{
+                    opacity: 1;
+                    /*A VOIR AVEC QUENTIN*/
+                    color: linear-gradient(to bottom right, $secondary, $primary);
+                    /*A VOIR AVEC QUENTIN*/
+                    transition: opacity 1000ms;
+                }
+            }
         }
     }
     
@@ -108,22 +153,80 @@ body{
         border-radius: 1em;
         width: 90%;
         margin: 5px 0px 10px 0px;
-        padding: 5px 10px 5px 10px;
         box-shadow: 1px 1px 12px rgb(197, 197, 197);
-        .mealname{
-            font-weight: bold;
-            font-size: 1em;
-            margin-top: 5px; 
-            margin-bottom: 5px;
-        }
-        .articlelign2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .whitediv{
             display: flex;
-            justify-content: space-between;
-            margin-top: 5px;
-            .articlelign2__p{
-                font-size: 0.8em;
-                margin-top: 2px;
+            flex: 1;
+            flex-direction: column;
+            padding: 5px 10px 5px 10px;
+            .whitediv_mealname{
+                font-weight: bold;
+                font-size: 1em;
+                margin-top: 5px; 
                 margin-bottom: 5px;
+            }
+            .whitediv_articlelign2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 5px;
+                .whitediv_articlelign2__p{
+                    font-size: 0.8em;
+                    margin-top: 2px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        /*pour les points de suspension
+        
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        */ 
+
+        .greendiv{
+            width: 0%;
+            background-color: $tertiary;
+            border-radius: 0 1em 1em 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            height: 62px;
+            transition: width 1s;
+            overflow: hidden;
+
+            .greendiv_tick{
+                background-color: white;
+                border-radius: 50%;
+                width: 22px;
+                height: 22px;
+                padding-top: 2px;
+                transform: rotate(0deg);
+                transition : transform 1s;
+                .fas.fa-check{
+                    color: $tertiary;
+                    font-size: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        &:hover{
+            .greendiv{
+                width: 25%;
+                transition: width 1s;
+                .greendiv_tick{
+                    transform: rotate(360deg);
+                    transition: transform 1s;
+                }
             }
         }
     }

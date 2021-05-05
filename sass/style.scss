@@ -21,7 +21,12 @@ body{
     #loader-container{
         position: fixed;
         background-color: $bg-darkgrey;
-        inset: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        /*A VOIR AVEC QUENTIN*/
+        z-index: 1000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -276,20 +281,24 @@ body{
                     .section3__icone-vide{
                         position: absolute;
                         opacity: 1;
-                        &:hover{
-                            opacity: 0;
-                            /*ne marche pas*/
-                            transition: opacity 1000ms;
-                        }
+                        transition: opacity 1000ms;
                     }
                     .section3__icone-plein{
                         position: absolute;
                         opacity: 0;
-                        &:hover{
-                            opacity: 1;
-                            color: linear-gradient(to bottom right, $secondary, $primary);
-                            /*ne marche pas*/
+                        transition: opacity 1000ms;
+                    }
+                    &:hover{
+                        .section3__icone-vide{
+                            opacity: 0;
                             transition: opacity 1000ms;
+                        }
+                        .section3__icone-plein{
+                            opacity: 1;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: linear-gradient(to bottom right, $secondary, $primary);
+                            transition: opacity 1000ms;
+                            /*Voir https://cssgradient.io/blog/css-gradient-text/*/
                         }
                     }
                 }

@@ -29,7 +29,12 @@ body * {
 body #loader-container {
   position: fixed;
   background-color: #eaeaea;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /*A VOIR AVEC QUENTIN*/
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,21 +260,23 @@ body .section3 .section3__block .section3__article .section3__icone {
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide {
   position: absolute;
   opacity: 1;
-}
-body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide:hover {
-  opacity: 0;
-  /*ne marche pas*/
   transition: opacity 1000ms;
 }
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein {
   position: absolute;
   opacity: 0;
-}
-body .section3 .section3__block .section3__article .section3__icone .section3__icone-plein:hover {
-  opacity: 1;
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  /*ne marche pas*/
   transition: opacity 1000ms;
+}
+body .section3 .section3__block .section3__article .section3__icone:hover .section3__icone-vide {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+body .section3 .section3__block .section3__article .section3__icone:hover .section3__icone-plein {
+  opacity: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  transition: opacity 1000ms;
+  /*Voir https://cssgradient.io/blog/css-gradient-text/*/
 }
 body footer {
   background-color: #353535;
@@ -360,20 +367,32 @@ body * {
   flex-direction: column;
   width: 100%;
   position: relative;
+  /*A VOIR AVEC QUENTIN
+  @keyframes transition {
+  0%   { translateY: 0px; opacity:0; }
+  100% { translateY: 20px; opacity:1; }
+  }
+  */
 }
 @keyframes transition {
   0% {
-    margin-top: -70px;
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
-    margin-top: 0;
+    transform: translateY(0px);
     opacity: 1;
   }
 }
-.menu div {
+.menu .menu__article {
   opacity: 0;
   animation: transition 1s ease-in-out 2s forwards;
+}
+.menu .menu__article:nth-child(2) {
+  animation: transition 1s ease-in-out 2.5s forwards;
+}
+.menu .menu__article:nth-child(3) {
+  animation: transition 1s ease-in-out 3s forwards;
 }
 .menu .heading {
   display: flex;
@@ -383,15 +402,41 @@ body * {
   margin-top: 0;
   padding: 20px 20px 0px 0;
   width: 100%;
+  position: relative;
 }
 .menu .heading .heading__h1 {
   font-size: 1.5em;
   font-family: Shrikhand;
   margin: 5px 20px 5px 0px;
 }
-.menu .heading .far.fa-heart {
+.menu .heading .heading__icone {
   font-size: 1.5em;
   color: black;
+  right: 0;
+  /*A VOIR AVEC QUENTIN*/
+  position: absolute;
+}
+.menu .heading .heading__icone .heading__icone-vide {
+  position: absolute;
+  opacity: 1;
+  right: 0;
+}
+.menu .heading .heading__icone .heading__icone-vide:hover {
+  opacity: 0;
+  /*A VOIR AVEC QUENTIN*/
+  transition: opacity 1000ms;
+}
+.menu .heading .heading__icone .heading__icone-plein {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+}
+.menu .heading .heading__icone .heading__icone-plein:hover {
+  opacity: 1;
+  /*A VOIR AVEC QUENTIN*/
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  /*A VOIR AVEC QUENTIN*/
+  transition: opacity 1000ms;
 }
 .menu .menu__h2 {
   font-size: 1.2em;
@@ -415,24 +460,77 @@ body * {
   border-radius: 1em;
   width: 90%;
   margin: 5px 0px 10px 0px;
-  padding: 5px 10px 5px 10px;
   box-shadow: 1px 1px 12px #c5c5c5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*pour les points de suspension
+
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  */
 }
-.menu .menu__article .mealname {
+.menu .menu__article .whitediv {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 5px 10px 5px 10px;
+}
+.menu .menu__article .whitediv .whitediv_mealname {
   font-weight: bold;
   font-size: 1em;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.menu .menu__article .articlelign2 {
+.menu .menu__article .whitediv .whitediv_articlelign2 {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 5px;
 }
-.menu .menu__article .articlelign2 .articlelign2__p {
+.menu .menu__article .whitediv .whitediv_articlelign2 .whitediv_articlelign2__p {
   font-size: 0.8em;
   margin-top: 2px;
   margin-bottom: 5px;
+}
+.menu .menu__article .greendiv {
+  width: 0%;
+  background-color: #99E2D0;
+  border-radius: 0 1em 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 62px;
+  transition: width 1s;
+  overflow: hidden;
+}
+.menu .menu__article .greendiv .greendiv_tick {
+  background-color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding-top: 2px;
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+.menu .menu__article .greendiv .greendiv_tick .fas.fa-check {
+  color: #99E2D0;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu__article:hover .greendiv {
+  width: 25%;
+  transition: width 1s;
+}
+.menu .menu__article:hover .greendiv .greendiv_tick {
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 .menu .button {
   text-align: center;
