@@ -25,7 +25,6 @@ body{
         right: 0;
         top: 0;
         bottom: 0;
-        /*A VOIR AVEC QUENTIN*/
         z-index: 1000;
         display: flex;
         justify-content: center;
@@ -300,7 +299,6 @@ body{
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
                             transition: opacity 1000ms;
-                            /*Voir https://cssgradient.io/blog/css-gradient-text/*/
                         }
                     }
                 }
@@ -367,7 +365,6 @@ body{
                 padding-left: 14px;
                 height: 25px;
                 font-size: 25px;
-                /*Ne marche pas*/
                 margin-bottom: 10px;
             }
         }
@@ -574,6 +571,7 @@ body{
                         }
                         .section3__icone{
                             font-size: 1.4em;
+                            padding-right: 20px;
                         }
                     }
                 }

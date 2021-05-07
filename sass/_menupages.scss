@@ -78,52 +78,68 @@ body{
         &:nth-child(3){
             animation: transition 1s ease-in-out 3s forwards;
         }
-    }
-        /*A VOIR AVEC QUENTIN
-        @keyframes transition {
-        0%   { translateY: 0px; opacity:0; }
-        100% { translateY: 20px; opacity:1; }
+        &:nth-child(4){
+            animation: transition 1s ease-in-out 3.5s forwards;
         }
-        */
+        &:nth-child(5){
+            animation: transition 1s ease-in-out 4s forwards;
+        }
+        &:nth-child(6){
+            animation: transition 1s ease-in-out 4.5s forwards;
+        }
+        &:nth-child(7){
+            animation: transition 1s ease-in-out 5s forwards;
+        }
+        &:nth-child(8){
+            animation: transition 1s ease-in-out 5.5s forwards;
+        }
+        &:nth-child(9){
+            animation: transition 1s ease-in-out 6s forwards;
+        }
+    }
+
     .heading{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: baseline;
         margin-top: 0;
-        padding: 20px 20px 0px 0;
+        margin-left: -10px;
         width: 100%;
         position: relative;
         .heading__h1{
             font-size: 1.5em;
             font-family: Shrikhand;
             margin: 5px 20px 5px 0px;
+            padding: 20px 20px 0px 0px;
         }
         .heading__icone{
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: black;
-            right: 0;
-            /*A VOIR AVEC QUENTIN*/
+            right: 40px;
+            top: 30px;
             position: absolute;
             .heading__icone-vide{
                 position: absolute;
                 opacity: 1;
-                right: 0;
-                &:hover{
-                    opacity: 0;
-                    /*A VOIR AVEC QUENTIN*/
-                    transition: opacity 1000ms;
-                }
+                transition: opacity 1000ms;
             }
             .heading__icone-plein{
                 position: absolute;
                 opacity: 0;
-                right: 0;
-                &:hover{
+                transition: opacity 1000ms;
+            }
+            &:hover{
+                .heading__icone-vide{
+                    opacity: 0;
+                    transition: opacity 1000ms;
+                }
+                .heading__icone-plein{
                     opacity: 1;
-                    /*A VOIR AVEC QUENTIN*/
-                    color: linear-gradient(to bottom right, $secondary, $primary);
-                    /*A VOIR AVEC QUENTIN*/
+                    background: linear-gradient(to bottom right, $secondary, $primary);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     transition: opacity 1000ms;
                 }
             }
@@ -198,7 +214,7 @@ body{
             justify-content: center;
             align-items: center;
             padding: 0;
-            height: 62px;
+            height: auto;
             transition: width 1s;
             overflow: hidden;
 

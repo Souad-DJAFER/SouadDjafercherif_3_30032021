@@ -33,7 +33,6 @@ body #loader-container {
   right: 0;
   top: 0;
   bottom: 0;
-  /*A VOIR AVEC QUENTIN*/
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -278,7 +277,6 @@ body .section3 .section3__block .section3__article .section3__icone:hover .secti
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 1000ms;
-  /*Voir https://cssgradient.io/blog/css-gradient-text/*/
 }
 body footer {
   background-color: #353535;
@@ -369,12 +367,6 @@ body * {
   flex-direction: column;
   width: 100%;
   position: relative;
-  /*A VOIR AVEC QUENTIN
-  @keyframes transition {
-  0%   { translateY: 0px; opacity:0; }
-  100% { translateY: 20px; opacity:1; }
-  }
-  */
 }
 @keyframes transition {
   0% {
@@ -396,13 +388,31 @@ body * {
 .menu .menu__article:nth-child(3) {
   animation: transition 1s ease-in-out 3s forwards;
 }
+.menu .menu__article:nth-child(4) {
+  animation: transition 1s ease-in-out 3.5s forwards;
+}
+.menu .menu__article:nth-child(5) {
+  animation: transition 1s ease-in-out 4s forwards;
+}
+.menu .menu__article:nth-child(6) {
+  animation: transition 1s ease-in-out 4.5s forwards;
+}
+.menu .menu__article:nth-child(7) {
+  animation: transition 1s ease-in-out 5s forwards;
+}
+.menu .menu__article:nth-child(8) {
+  animation: transition 1s ease-in-out 5.5s forwards;
+}
+.menu .menu__article:nth-child(9) {
+  animation: transition 1s ease-in-out 6s forwards;
+}
 .menu .heading {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
   margin-top: 0;
-  padding: 20px 20px 0px 0;
+  margin-left: -10px;
   width: 100%;
   position: relative;
 }
@@ -410,34 +420,35 @@ body * {
   font-size: 1.5em;
   font-family: Shrikhand;
   margin: 5px 20px 5px 0px;
+  padding: 20px 20px 0px 0px;
 }
 .menu .heading .heading__icone {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: black;
-  right: 0;
-  /*A VOIR AVEC QUENTIN*/
+  right: 40px;
+  top: 30px;
   position: absolute;
 }
 .menu .heading .heading__icone .heading__icone-vide {
   position: absolute;
   opacity: 1;
-  right: 0;
-}
-.menu .heading .heading__icone .heading__icone-vide:hover {
-  opacity: 0;
-  /*A VOIR AVEC QUENTIN*/
   transition: opacity 1000ms;
 }
 .menu .heading .heading__icone .heading__icone-plein {
   position: absolute;
   opacity: 0;
-  right: 0;
+  transition: opacity 1000ms;
 }
-.menu .heading .heading__icone .heading__icone-plein:hover {
+.menu .heading .heading__icone:hover .heading__icone-vide {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+.menu .heading .heading__icone:hover .heading__icone-plein {
   opacity: 1;
-  /*A VOIR AVEC QUENTIN*/
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  /*A VOIR AVEC QUENTIN*/
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: opacity 1000ms;
 }
 .menu .menu__h2 {
@@ -506,7 +517,7 @@ body * {
   justify-content: center;
   align-items: center;
   padding: 0;
-  height: 62px;
+  height: auto;
   transition: width 1s;
   overflow: hidden;
 }
@@ -733,7 +744,6 @@ footer .footer__li .footer__i {
     padding-left: 14px;
     height: 25px;
     font-size: 25px;
-    /*Ne marche pas*/
     margin-bottom: 10px;
   }
   body #br {
@@ -891,6 +901,7 @@ footer .footer__li .footer__i {
   }
   body .section3 .section3__block .section3__article .section3__box .section3__icone {
     font-size: 1.4em;
+    padding-right: 20px;
   }
   body footer .footer__logo {
     font-size: 2.5em;
