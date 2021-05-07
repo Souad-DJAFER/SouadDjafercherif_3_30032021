@@ -295,8 +295,10 @@ body{
                         }
                         .section3__icone-plein{
                             opacity: 1;
+                            background: linear-gradient(to bottom right, $secondary, $primary);
+                            background-clip: border-box;
                             -webkit-background-clip: text;
-                            -webkit-text-fill-color: linear-gradient(to bottom right, $secondary, $primary);
+                            -webkit-text-fill-color: transparent;
                             transition: opacity 1000ms;
                             /*Voir https://cssgradient.io/blog/css-gradient-text/*/
                         }
