@@ -115,10 +115,10 @@ body{
         }
         .heading__icone{
             font-size: 1.3em;
+            position: absolute;
             color: black;
             right: 40px;
             top: 30px;
-            position: absolute;
             .heading__icone-vide{
                 position: absolute;
                 opacity: 1;
@@ -167,48 +167,53 @@ body{
     .menu__article{
         background-color: white;
         border-radius: 1em;
-        width: 90%;
         margin: 5px 0px 10px 0px;
         box-shadow: 1px 1px 12px rgb(197, 197, 197);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 90%;
+        /*A VOIR AVEC QUENTIN - NE MARCHE PAS*/
+        cursor: pointer;
         .whitediv{
             display: flex;
-            flex: 1;
             flex-direction: column;
             padding: 5px 10px 5px 10px;
+            flex: 1;
+            overflow: hidden;
             .whitediv_mealname{
                 font-weight: bold;
                 font-size: 1em;
                 margin-top: 5px; 
                 margin-bottom: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .whitediv_articlelign2{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 margin-top: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 .whitediv_articlelign2__p{
                     font-size: 0.8em;
                     margin-top: 2px;
                     margin-bottom: 5px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }
-
-        /*pour les points de suspension
-        
-        width: 250px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        */ 
-
         .greendiv{
             width: 0%;
             background-color: $tertiary;
             border-radius: 0 1em 1em 0;
+            /*A VOIR AVEC QUENTIN*/
+            cursor: pointer;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -217,7 +222,6 @@ body{
             height: auto;
             transition: width 1s;
             overflow: hidden;
-
             .greendiv_tick{
                 background-color: white;
                 border-radius: 50%;
@@ -306,6 +310,7 @@ footer{
 
     .menuheader{
         height: 100px;
+        text-align: center;
     /*A CHANGER*/
             .menuheader__a{
                 width: 25%;
@@ -315,7 +320,6 @@ footer{
                 }
             .menuheader__p{
                 font-size: 50px;
-                width: 75%;
             }
     }
 
@@ -331,12 +335,12 @@ footer{
 
     .menu{
         .heading{
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 20px 50px 0px 30px;
             .heading__h1{
                 font-size: 2em;
             }
-            .far.fa-heart{
+            .heading__icone{
                 font-size: 2em;
             }
         }
@@ -414,13 +418,18 @@ footer{
         .heading{
             justify-content: space-between;
             padding: 20px 50px 0px 30px;
+            color: red;
+            /*NE MARCHE PAS*/
             .heading__h1{
-                font-size: 2.5em;
+                font-size: 4em;
             }
-            .far.fa-heart{
+            .heading__icone{
                 font-size: 2em;
+                /*A CORRIGER*/
+                margin-right: 50px;
             }
         }
+    }
         
         .menu__h2{
             font-size: 1.6em;
@@ -450,5 +459,5 @@ footer{
             font-size: 23px;
             margin: 50px 0 40px 0;
         }
-    }
+
 }

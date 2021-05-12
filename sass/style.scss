@@ -29,7 +29,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: fadeoutloader 3s forwards;
+        animation: fadeoutloader 2s forwards;
    
         .loader{
             margin: 0;
@@ -277,6 +277,9 @@ body{
                     position: absolute;
                     bottom: 50px;
                     right: 40px; 
+                    /*A VOIR AVEC QUENTIN*/
+                    cursor: pointer;
+                    cursor: hand;
                     .section3__icone-vide{
                         position: absolute;
                         opacity: 1;
@@ -285,6 +288,10 @@ body{
                     .section3__icone-plein{
                         position: absolute;
                         opacity: 0;
+                        background: linear-gradient(to bottom right, $secondary, $primary);
+                        background-clip: border-box;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         transition: opacity 1000ms;
                     }
                     &:hover{
@@ -294,10 +301,6 @@ body{
                         }
                         .section3__icone-plein{
                             opacity: 1;
-                            background: linear-gradient(to bottom right, $secondary, $primary);
-                            background-clip: border-box;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
                             transition: opacity 1000ms;
                         }
                     }
@@ -555,6 +558,8 @@ body{
                 justify-content: space-around;
                 .section3__article{
                     width: 43%;
+                    /*Ne marche pas*/
+                    margin-bottom: 50px;
                     .section3__img{
                         width: 100%;
                         height: 250px;
