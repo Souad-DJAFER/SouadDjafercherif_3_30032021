@@ -255,9 +255,7 @@ body .section3 .section3__block .section3__article .section3__icone {
   position: absolute;
   bottom: 50px;
   right: 40px;
-  /*A VOIR AVEC QUENTIN*/
   cursor: pointer;
-  cursor: hand;
 }
 body .section3 .section3__block .section3__article .section3__icone .section3__icone-vide {
   position: absolute;
@@ -366,8 +364,6 @@ body * {
   font-family: Roboto;
   border-radius: 2em 2em 0 0;
   margin-top: -35px;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   position: relative;
 }
@@ -420,7 +416,7 @@ body * {
   position: relative;
 }
 .menu .heading .heading__h1 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: Shrikhand;
   margin: 5px 20px 5px 0px;
   padding: 20px 20px 0px 0px;
@@ -431,6 +427,7 @@ body * {
   color: black;
   right: 40px;
   top: 30px;
+  cursor: pointer;
 }
 .menu .heading .heading__icone .heading__icone-vide {
   position: absolute;
@@ -439,6 +436,10 @@ body * {
 }
 .menu .heading .heading__icone .heading__icone-plein {
   position: absolute;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: opacity 1000ms;
 }
@@ -448,48 +449,41 @@ body * {
 }
 .menu .heading .heading__icone:hover .heading__icone-plein {
   opacity: 1;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: opacity 1000ms;
-}
-.menu .menu__h2 {
-  font-size: 1.2em;
-  font-weight: lighter;
-  padding: 10px 0px 10px 0px;
-  display: inline;
-  text-align: left;
-  margin: 15px 0 0 20px;
-}
-.menu .menu__h2 .underlined {
-  border-bottom: 4px solid #99E2D0;
 }
 .menu .courses {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.menu .menu__article {
+.menu .courses .courses__h2 {
+  font-size: 1.2em;
+  font-weight: lighter;
+  padding: 10px 0px 10px 0px;
+  margin: 15px 0 0 20px;
+}
+.menu .courses .courses__h2 .underlined {
+  border-bottom: 4px solid #99E2D0;
+}
+.menu .courses .menu__article {
   background-color: white;
   border-radius: 1em;
-  margin: 5px 0px 10px 0px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
   box-shadow: 1px 1px 12px #c5c5c5;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
   cursor: pointer;
 }
-.menu .menu__article .whitediv {
+.menu .courses .menu__article .whitediv {
   display: flex;
   flex-direction: column;
   padding: 5px 10px 5px 10px;
   flex: 1;
   overflow: hidden;
 }
-.menu .menu__article .whitediv .whitediv_mealname {
+.menu .courses .menu__article .whitediv .whitediv_mealname {
   font-weight: bold;
   font-size: 1em;
   margin-top: 5px;
@@ -498,29 +492,27 @@ body * {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu__article .whitediv .whitediv_articlelign2 {
+.menu .courses .menu__article .whitediv .whitediv_articlelign2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu__article .whitediv .whitediv_articlelign2 .whitediv_articlelign2__p {
+.menu .courses .menu__article .whitediv .whitediv_articlelign2 .whitediv_articlelign2__p {
   font-size: 0.8em;
-  margin-top: 2px;
-  margin-bottom: 5px;
+  margin-top: 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .menu__article .whitediv .whitediv_articlelign2 .whitediv_articlelign2__p2 {
+.menu .courses .menu__article .whitediv .whitediv_articlelign2 .whitediv_articlelign2__p2 {
   font-size: 1em;
   margin-top: 2px;
   margin-bottom: 15px;
 }
-.menu .menu__article .greendiv {
+.menu .courses .menu__article .greendiv {
   width: 0%;
   background-color: #99E2D0;
   border-radius: 0 1em 1em 0;
@@ -534,7 +526,7 @@ body * {
   transition: width 1s;
   overflow: hidden;
 }
-.menu .menu__article .greendiv .greendiv_tick {
+.menu .courses .menu__article .greendiv .greendiv_tick {
   background-color: white;
   border-radius: 50%;
   width: 22px;
@@ -543,18 +535,18 @@ body * {
   transform: rotate(0deg);
   transition: transform 1s;
 }
-.menu .menu__article .greendiv .greendiv_tick .fas.fa-check {
+.menu .courses .menu__article .greendiv .greendiv_tick .fas.fa-check {
   color: #99E2D0;
   font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu .menu__article:hover .greendiv {
+.menu .courses .menu__article:hover .greendiv {
   width: 25%;
   transition: width 1s;
 }
-.menu .menu__article:hover .greendiv .greendiv_tick {
+.menu .courses .menu__article:hover .greendiv .greendiv_tick {
   transform: rotate(360deg);
   transition: transform 1s;
 }
@@ -641,6 +633,8 @@ footer .footer__li .footer__i {
   }
   .menu .heading .heading__icone {
     font-size: 2em;
+    right: 70px;
+    top: 50px;
   }
   .menu .menu__h2 {
     font-size: 1.6em;
@@ -652,6 +646,8 @@ footer .footer__li .footer__i {
   .menu .menu__article {
     width: 70%;
     height: 80px;
+    margin: auto;
+    margin-top: 30px;
   }
   .menu .menu__article .mealname {
     font-size: 1.5em;
@@ -676,7 +672,7 @@ footer .footer__li .footer__i {
   /*HEADER*/
   .menuheader {
     height: 100px;
-    /*A CHANGER*/
+    text-align: center;
   }
   .menuheader .menuheader__a {
     width: 25%;
@@ -697,42 +693,47 @@ footer .footer__li .footer__i {
   }
 
   /*SECTION MENU*/
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .menu .heading {
-    justify-content: space-between;
-    padding: 20px 50px 0px 30px;
-    color: red;
-    /*NE MARCHE PAS*/
+    justify-content: space-around;
   }
   .menu .heading .heading__h1 {
     font-size: 4em;
   }
   .menu .heading .heading__icone {
-    font-size: 2em;
-    /*A CORRIGER*/
-    margin-right: 50px;
+    font-size: 3em;
+    margin-right: 100px;
+    top: 40px;
   }
-
-  .menu__h2 {
+  .menu .courses {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .menu .courses .courses__h2 {
     font-size: 1.6em;
     margin-bottom: 15px;
   }
-
-  .courses {
-    width: 100%;
-  }
-
-  .menu__article {
-    width: 60%;
+  .menu .courses .menu__article {
+    width: 90%;
     height: 80px;
   }
-  .menu__article .mealname {
+  .menu .courses .menu__article .mealname {
     font-size: 1.5em;
   }
-  .menu__article .articlelign2 .articlelign2__p {
+  .menu .courses .menu__article .articlelign2 .articlelign2__p {
     font-size: 1.3em;
   }
-
-  .menu__button {
+  .menu .button {
+    flex: 1;
+    justify-content: center;
+  }
+  .menu .button .menu__button {
     width: 250px;
     height: 50px;
     border-radius: 2em;

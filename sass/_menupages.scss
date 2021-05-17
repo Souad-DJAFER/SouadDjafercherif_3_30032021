@@ -55,8 +55,6 @@ body{
     font-family: Roboto;
     border-radius: 2em 2em 0 0;
     margin-top: -35px;
-    display: flex;
-    flex-direction: column;
     width: 100%;
     position: relative;
     @keyframes transition {
@@ -108,7 +106,7 @@ body{
         width: 100%;
         position: relative;
         .heading__h1{
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-family: Shrikhand;
             margin: 5px 20px 5px 0px;
             padding: 20px 20px 0px 0px;
@@ -119,6 +117,7 @@ body{
             color: black;
             right: 40px;
             top: 30px;
+            cursor: pointer;
             .heading__icone-vide{
                 position: absolute;
                 opacity: 1;
@@ -126,6 +125,10 @@ body{
             }
             .heading__icone-plein{
                 position: absolute;
+                background: linear-gradient(to bottom right, $secondary, $primary);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 opacity: 0;
                 transition: opacity 1000ms;
             }
@@ -136,143 +139,134 @@ body{
                 }
                 .heading__icone-plein{
                     opacity: 1;
-                    background: linear-gradient(to bottom right, $secondary, $primary);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
                     transition: opacity 1000ms;
                 }
             }
         }
     }
     
-    .menu__h2{
-        font-size: 1.2em;
-        font-weight: lighter;
-        padding: 10px 0px 10px 0px;
-        display: inline;
-        text-align: left;
-        margin: 15px 0 0 20px;
-        .underlined{
-            border-bottom: 4px solid $tertiary;
-        }
-    }
+    
     .courses{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu__article{
-        background-color: white;
-        border-radius: 1em;
-        margin: 5px 0px 10px 0px;
-        box-shadow: 1px 1px 12px rgb(197, 197, 197);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        cursor: pointer;
-        .whitediv{
-            display: flex;
-            flex-direction: column;
-            padding: 5px 10px 5px 10px;
-            flex: 1;
-            overflow: hidden;
-            .whitediv_mealname{
-                font-weight: bold;
-                font-size: 1em;
-                margin-top: 5px; 
-                margin-bottom: 5px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+        .courses__h2{
+            font-size: 1.2em;
+            font-weight: lighter;
+            padding: 10px 0px 10px 0px;
+            margin: 15px 0 0 20px;
+            .underlined{
+                border-bottom: 4px solid $tertiary;
             }
-            .whitediv_articlelign2{
+        }
+        .menu__article{
+            background-color: white;
+            border-radius: 1em;
+            margin: auto;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-shadow: 1px 1px 12px rgb(197, 197, 197);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 90%;
+            cursor: pointer;
+            .whitediv{
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 5px;
-                white-space: nowrap;
+                flex-direction: column;
+                padding: 5px 10px 5px 10px;
+                flex: 1;
                 overflow: hidden;
-                text-overflow: ellipsis;
-                .whitediv_articlelign2__p{
-                    font-size: 0.8em;
-                    margin-top: 2px;
+                .whitediv_mealname{
+                    font-weight: bold;
+                    font-size: 1em;
+                    margin-top: 5px; 
                     margin-bottom: 5px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-                .whitediv_articlelign2__p2{
-                    font-size: 1em;
-                    margin-top: 2px;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-        .greendiv{
-            width: 0%;
-            background-color: $tertiary;
-            border-radius: 0 1em 1em 0;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            height: auto;
-            transition: width 1s;
-            overflow: hidden;
-            .greendiv_tick{
-                background-color: white;
-                border-radius: 50%;
-                width: 22px;
-                height: 22px;
-                padding-top: 2px;
-                transform: rotate(0deg);
-                transition : transform 1s;
-                .fas.fa-check{
-                    color: $tertiary;
-                    font-size: 1em;
+                .whitediv_articlelign2{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    .whitediv_articlelign2__p{
+                        font-size: 0.8em;
+                        margin-top: 4px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .whitediv_articlelign2__p2{
+                        font-size: 1em;
+                        margin-top: 2px;
+                        margin-bottom: 15px;
+                    }
                 }
             }
-        }
-        &:hover{
             .greendiv{
-                width: 25%;
+                width: 0%;
+                background-color: $tertiary;
+                border-radius: 0 1em 1em 0;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                height: auto;
                 transition: width 1s;
+                overflow: hidden;
                 .greendiv_tick{
-                    transform: rotate(360deg);
-                    transition: transform 1s;
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 22px;
+                    height: 22px;
+                    padding-top: 2px;
+                    transform: rotate(0deg);
+                    transition : transform 1s;
+                    .fas.fa-check{
+                        color: $tertiary;
+                        font-size: 1em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            &:hover{
+                .greendiv{
+                    width: 25%;
+                    transition: width 1s;
+                    .greendiv_tick{
+                        transform: rotate(360deg);
+                        transition: transform 1s;
+                    }
                 }
             }
         }
-    }
+    }    
 
-    .button{
-        text-align: center;
-    }
-    .menu__button{
-        background: linear-gradient(to bottom right, $secondary, $primary);
-        color: white;
-        width: 180px;
-        height: 40px; 
-        border-radius: 1.5em;
-        border: 0px;
-        margin-bottom: 40px;
-        margin-top: 30px;
-        box-shadow: 1px 1px 12px rgb(197, 197, 197);
-        &:hover{
-            background: linear-gradient(to bottom right, #FF93FA, #AD70F6);
-            box-shadow: 2px 2px 14px rgb(121, 121, 121);
+        .button{
+            text-align: center;
         }
-    }
-}
+        .menu__button{
+            background: linear-gradient(to bottom right, $secondary, $primary);
+            color: white;
+            width: 180px;
+            height: 40px; 
+            border-radius: 1.5em;
+            border: 0px;
+            margin-bottom: 40px;
+            margin-top: 30px;
+            box-shadow: 1px 1px 12px rgb(197, 197, 197);
+            &:hover{
+                background: linear-gradient(to bottom right, #FF93FA, #AD70F6);
+                box-shadow: 2px 2px 14px rgb(121, 121, 121);
+            }
+        }
+} 
 
 /*FOOTER*/
 
@@ -345,6 +339,8 @@ footer{
             }
             .heading__icone{
                 font-size: 2em;
+                right: 70px;
+                top: 50px;
             }
         }
         
@@ -359,6 +355,8 @@ footer{
         .menu__article{
             width: 70%;
             height: 80px;
+            margin: auto;
+            margin-top: 30px;
             .mealname{
                 font-size: 1.5em;
             }
@@ -394,7 +392,7 @@ footer{
 
     .menuheader{
         height: 100px;
-    /*A CHANGER*/
+        text-align: center;
             .menuheader__a{
                 width: 25%;
             }
@@ -407,60 +405,63 @@ footer{
             }
     }
 
-   /*SECTION PHOTO*/
+    /*SECTION PHOTO*/
 
-   .banner{
-    object-fit: cover;
-    width: 100%;
-    height: 500px;
-}
+    .banner{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
 
-    /*SECTION MENU*/
+        /*SECTION MENU*/
 
     .menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         .heading{
-            justify-content: space-between;
-            padding: 20px 50px 0px 30px;
-            color: red;
-            /*NE MARCHE PAS*/
+            justify-content: space-around;
             .heading__h1{
                 font-size: 4em;
             }
             .heading__icone{
-                font-size: 2em;
-                /*A CORRIGER*/
-                margin-right: 50px;
+                font-size: 3em;
+                margin-right: 100px;
+                top: 40px;
             }
-        }
-    }
-        
-        .menu__h2{
-            font-size: 1.6em;
-            margin-bottom: 15px;
         }
         .courses{
-            width: 100%;
-        }
-
-        .menu__article{
-            width: 60%;
-            height: 80px;
-            .mealname{
-                font-size: 1.5em;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .courses__h2{
+                font-size: 1.6em;
+                margin-bottom: 15px;
             }
-            .articlelign2{
-                .articlelign2__p{
-                    font-size: 1.3em;
+            .menu__article{
+                width: 90%;
+                height: 80px;
+                .mealname{
+                    font-size: 1.5em;
+                }
+                .articlelign2{
+                    .articlelign2__p{
+                        font-size: 1.3em;
+                    }
                 }
             }
         }
-
-        .menu__button{
-            width: 250px;
-            height: 50px; 
-            border-radius: 2em;
-            font-size: 23px;
-            margin: 50px 0 40px 0;
+        .button{
+            flex: 1;
+            justify-content: center;
+            .menu__button{
+                width: 250px;
+                height: 50px; 
+                border-radius: 2em;
+                font-size: 23px;
+                margin: 50px 0 40px 0;
+            }
         }
-
+    }
 }
