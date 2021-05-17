@@ -71,30 +71,30 @@ body{
     }
     .menu__article {
         opacity: 0;
-        animation: transition 1s ease-in-out 2s forwards;
+        animation: transition 1s ease-in-out 1.5s forwards;
         &:nth-child(2){
-            animation: transition 1s ease-in-out 2.5s forwards;
+            animation: transition 1s ease-in-out 2s forwards;
         }
         &:nth-child(3){
-            animation: transition 1s ease-in-out 3s forwards;
+            animation: transition 1s ease-in-out 2.5s forwards;
         }
         &:nth-child(4){
-            animation: transition 1s ease-in-out 3.5s forwards;
+            animation: transition 1s ease-in-out 3s forwards;
         }
         &:nth-child(5){
-            animation: transition 1s ease-in-out 4s forwards;
+            animation: transition 1s ease-in-out 3.5s forwards;
         }
         &:nth-child(6){
-            animation: transition 1s ease-in-out 4.5s forwards;
+            animation: transition 1s ease-in-out 4s forwards;
         }
         &:nth-child(7){
-            animation: transition 1s ease-in-out 5s forwards;
+            animation: transition 1s ease-in-out 4.5s forwards;
         }
         &:nth-child(8){
-            animation: transition 1s ease-in-out 5.5s forwards;
+            animation: transition 1s ease-in-out 5s forwards;
         }
         &:nth-child(9){
-            animation: transition 1s ease-in-out 6s forwards;
+            animation: transition 1s ease-in-out 5.5s forwards;
         }
     }
 
@@ -173,7 +173,6 @@ body{
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
-        /*A VOIR AVEC QUENTIN - NE MARCHE PAS*/
         cursor: pointer;
         .whitediv{
             display: flex;
@@ -206,13 +205,17 @@ body{
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
+                .whitediv_articlelign2__p2{
+                    font-size: 1em;
+                    margin-top: 2px;
+                    margin-bottom: 15px;
+                }
             }
         }
         .greendiv{
             width: 0%;
             background-color: $tertiary;
             border-radius: 0 1em 1em 0;
-            /*A VOIR AVEC QUENTIN*/
             cursor: pointer;
             display: flex;
             flex-direction: column;

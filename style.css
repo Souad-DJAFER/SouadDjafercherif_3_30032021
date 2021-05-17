@@ -383,31 +383,31 @@ body * {
 }
 .menu .menu__article {
   opacity: 0;
-  animation: transition 1s ease-in-out 2s forwards;
+  animation: transition 1s ease-in-out 1.5s forwards;
 }
 .menu .menu__article:nth-child(2) {
-  animation: transition 1s ease-in-out 2.5s forwards;
+  animation: transition 1s ease-in-out 2s forwards;
 }
 .menu .menu__article:nth-child(3) {
-  animation: transition 1s ease-in-out 3s forwards;
+  animation: transition 1s ease-in-out 2.5s forwards;
 }
 .menu .menu__article:nth-child(4) {
-  animation: transition 1s ease-in-out 3.5s forwards;
+  animation: transition 1s ease-in-out 3s forwards;
 }
 .menu .menu__article:nth-child(5) {
-  animation: transition 1s ease-in-out 4s forwards;
+  animation: transition 1s ease-in-out 3.5s forwards;
 }
 .menu .menu__article:nth-child(6) {
-  animation: transition 1s ease-in-out 4.5s forwards;
+  animation: transition 1s ease-in-out 4s forwards;
 }
 .menu .menu__article:nth-child(7) {
-  animation: transition 1s ease-in-out 5s forwards;
+  animation: transition 1s ease-in-out 4.5s forwards;
 }
 .menu .menu__article:nth-child(8) {
-  animation: transition 1s ease-in-out 5.5s forwards;
+  animation: transition 1s ease-in-out 5s forwards;
 }
 .menu .menu__article:nth-child(9) {
-  animation: transition 1s ease-in-out 6s forwards;
+  animation: transition 1s ease-in-out 5.5s forwards;
 }
 .menu .heading {
   display: flex;
@@ -480,7 +480,6 @@ body * {
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  /*A VOIR AVEC QUENTIN - NE MARCHE PAS*/
   cursor: pointer;
 }
 .menu .menu__article .whitediv {
@@ -516,11 +515,15 @@ body * {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu .menu__article .whitediv .whitediv_articlelign2 .whitediv_articlelign2__p2 {
+  font-size: 1em;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
 .menu .menu__article .greendiv {
   width: 0%;
   background-color: #99E2D0;
   border-radius: 0 1em 1em 0;
-  /*A VOIR AVEC QUENTIN*/
   cursor: pointer;
   display: flex;
   flex-direction: column;
