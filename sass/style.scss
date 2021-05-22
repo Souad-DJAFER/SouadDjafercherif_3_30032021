@@ -173,15 +173,18 @@ body{
             box-shadow: 1px 1px 12px rgb(197, 197, 197);
             .section2__number{
                 color: white;
-                font-size: 20px;
+                font-size: 15px;
                 background-color: $primary;
                 border-radius: 50%;
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 margin-left : -15px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+            .section2__h3{
+                font-size: 0.8em;
             }
             .section2__i{
                 font-size: 20px;
@@ -199,7 +202,7 @@ body{
 
     /* SECTION 3 - RESTAURANTS */
 
-    h3{
+    h4{
         padding-top: 50px;
         padding-bottom: 15px;
         margin-left: 20px;
@@ -256,13 +259,14 @@ body{
                         flex-direction: column;
                         width: 87%;
                         padding-left: 20px;
-                        font-size: 1.2em;
-                        .section3__h4{
+                        .section3__h5{
                             margin: 0;
                             padding-top: 10px;
+                            font-size: 1.3em;
                         }
                         .section3__p{
                             margin: 5px 0 20px 0;
+                            font-size: 1.1em;
                         }
                     }
                 }

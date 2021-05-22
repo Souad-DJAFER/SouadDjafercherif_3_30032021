@@ -94,6 +94,9 @@ body{
         &:nth-child(9){
             animation: transition 1s ease-in-out 5.5s forwards;
         }
+        &:nth-child(10){
+            animation: transition 1s ease-in-out 5.5s forwards;
+        }
     }
 
     .heading{
@@ -262,8 +265,7 @@ body{
             margin-top: 30px;
             box-shadow: 1px 1px 12px rgb(197, 197, 197);
             &:hover{
-                background: linear-gradient(to bottom right, #FF93FA, #AD70F6);
-                box-shadow: 2px 2px 14px rgb(121, 121, 121);
+                @extend %buttonhover;
             }
         }
 } 
@@ -308,7 +310,6 @@ footer{
     .menuheader{
         height: 100px;
         text-align: center;
-    /*A CHANGER*/
             .menuheader__a{
                 width: 25%;
             }
