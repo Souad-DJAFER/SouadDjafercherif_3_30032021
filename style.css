@@ -863,6 +863,7 @@ footer .footer__li .footer__i {
   }
   body .form .form__recherche {
     font-size: 30px;
+    margin-bottom: 10px;
   }
   body #br {
     display: none;
@@ -886,7 +887,7 @@ footer .footer__li .footer__i {
     font-size: 2.3em;
   }
   body .section2 .section2__article {
-    width: 60%;
+    width: 40%;
     font-size: 30px;
   }
   body .section2 .section2__article .section2__number {
